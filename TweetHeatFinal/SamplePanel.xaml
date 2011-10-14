@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="TweetHeatFinal.SamplePanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="500" d:DesignWidth="350" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+    <ScrollViewer HorizontalScrollBarVisibility="Auto">
+        <sdk:TabControl Height="450" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="320" Name="tabcontrol1">
+            <sdk:TabItem FontFamily="Portable User Interface" FontSize="12"  FontWeight="Medium"  Width="60" Header="Search" Name="tab1">
+                <Grid Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="320" Width="290">                    
+                    <TextBlock FontSize="9" FontFamily="Portable User Interface" Height="15" Width="50" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">Search:</TextBlock>
+                    <TextBox Height="25"  Name="search" Width="200" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"></TextBox>
+                    <TextBlock FontSize="9" FontFamily="Portable User Interface" Height="15" Width="50" Margin="10,70,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">Location:</TextBlock>
+                    <TextBox Height="25"  Name="loc" Width="200" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top"></TextBox>
+                    <TextBlock FontSize="9" FontFamily="Portable User Interface" Height="15" Width="50" Margin="10,120,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">Range:</TextBlock>
+                    <Slider Height="20"  Name="range" Width="200" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Maximum="1000" Minimum="1" ValueChanged="range_valueChanged" Value="300"></Slider>
+                    <TextBlock Height="20" FontSize="9" FontFamily="Portable User Interface" Name="range_value" Width="60" HorizontalAlignment="Left" Margin="220,135,0,0" VerticalAlignment="Top">300 km</TextBlock>
+                    <TextBlock FontSize="9" FontFamily="Portable User Interface" Height="15" Width="50" Margin="10,170,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">Language:</TextBlock>
+                    <ComboBox x:Name="lang"  Width="200" Height="25" Margin="10,190,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" SelectedIndex="0">
+                        <ComboBoxItem Content="English" />
+                        <ComboBoxItem Content="French" />
+                        <ComboBoxItem Content="German" />
+                        <ComboBoxItem Content="Japanese" />
+                        <ComboBoxItem Content="Portuguese" />
+                        <ComboBoxItem Content="Spanish" />
+                    </ComboBox>
+                    <TextBlock FontSize="9" FontFamily="Portable User Interface" Height="20" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,235,0,0">Visualization Style:</TextBlock>
+                    <RadioButton Height="20" Name="hm" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,255,0,0" Checked="hm_Checked">Heat Map</RadioButton>
+                    <RadioButton Height="20" Name="tp" Width="90" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,255,0,0" Checked="tp_Checked">Tweet Points</RadioButton>
+                    <RadioButton Height="20" Name="both" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,255,0,0" Checked="both_Checked" IsChecked="True">Both</RadioButton>
+
+                    <Button Width="100"  Click="submit_Click" Height="20" Background="Blue" Foreground="Blue" Margin="10,285,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <Button.Content>
+                            Submit
+                        </Button.Content>
+                    </Button>
+                    <Button Width="100"  Click="clear_click" Height="20" Background="Blue" Foreground="Blue" Margin="150,285,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <Button.Content>
+                            Clear
+                        </Button.Content>
+                    </Button>
+                    <!--<TextBlock FontSize="15" FontFamily="Portable User Interface" Width="150" Height="20" Margin="-13,-70,0,0" HorizontalAlignment="Left" Text="Tweet Heat" VerticalAlignment="Top" />-->
+                </Grid>
+            </sdk:TabItem>
+            <sdk:TabItem FontFamily="Portable User Interface" FontSize="12"  FontWeight="Medium"  Width="60" Header="About" Name="tab2">
+                <Grid Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="400" Width="290">
+                    <!--<TextBlock FontSize="15" FontFamily="Portable User Interface" Width="150" Height="20" Margin="-13,-70,0,0" HorizontalAlignment="Left" Text="Tweet Heat" VerticalAlignment="Top" />-->
+                    <Image Height="70"  Width="50" HorizontalAlignment="Left" Margin="10,10,0,0" Stretch="Fill" VerticalAlignment="Top" Source="/TweetHeatFinal;component/Resources/TweetHeatIcon.png" />
+                    <TextBlock FontSize="15" FontFamily="Portable User Interface"  Foreground="Blue" Height="25" Width="90" Margin="70,20,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">Tweet Heat</TextBlock>
+                    <TextBlock FontSize="10" FontFamily="Portable User Interface"  Height="20" Width="80" Margin="70,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextAlignment="Right" Opacity="0.5">By VMK</TextBlock>
+                    <TextBlock FontSize="9" FontFamily="Portable User Interface"  Height="300" Width="270" Margin="10,90,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="Wrap">
+                        Tweet Heat is a tool to visualize how people reacted to any product/movie/event in Twitter. It brings real-time tweets from Twitter and color's them based on the feeling conveyed.
+                        <LineBreak/>
+                        <LineBreak/>
+                        If the user tweeted postive, it is colored with green; while it is colored red if tweeted negatively. Other shades indicate mixed feelings, where more red shade indicate more negative feeling and more green shade indicates more positive feeling.
+                        <LineBreak/>
+                        <LineBreak/>
+                        The user can search for a keyword relating to any product/movie/event in the "search" box and enter seed "location" and "range". Additional options include language of tweets and visulalization style.
+                        <LineBreak/>
+                        <LineBreak/>
+                        'Tweet Points' Visualization style puts a colored marker at the location of the tweet. While, 'Heat Map' creates a heat map on the map with colored 'heat' centered at the location of the tweet and difussing radially. This style lets you visualize the overall user feelings in and around a location.
+                        <LineBreak/>
+                        <LineBreak/>
+                        For more information on Tweet Heat plz visit http://tweetheat.co.nr
+                        
+                    </TextBlock>
+                    
+                </Grid>
+            </sdk:TabItem>
+        </sdk:TabControl>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:google="http://base.google.com/ns/1.0" xml:lang="en-US" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.w3.org/2005/Atom" xmlns:twitter="http://api.twitter.com/">
+  <id>tag:search.twitter.com,2005:search/bing</id>
+  <link type="text/html" href="http://search.twitter.com/search?q=bing" rel="alternate"/>
+  <link type="application/atom+xml" href="http://search.twitter.com/search.atom?geocode=40.757929,-80.055624,500km&amp;q=bing&amp;rpp=100" rel="self"/>
+  <title>bing - Twitter Search</title>
+  <link type="application/opensearchdescription+xml" href="http://search.twitter.com/opensearch.xml" rel="search"/>
+  <link type="application/atom+xml" href="http://search.twitter.com/search.atom?geocode=40.757929%2C-80.055624%2C500km&amp;q=bing&amp;rpp=100&amp;since_id=17277815518" rel="refresh"/>
+  <twitter:warning>adjusted since_id to 17226526224 due to temporary error</twitter:warning>
+  <updated>2010-06-28T20:28:02Z</updated>
+  <openSearch:itemsPerPage>100</openSearch:itemsPerPage>
+  <openSearch:language>en</openSearch:language>
+  <entry>
+    <id>tag:search.twitter.com,2005:17277815518</id>
+    <published>2010-06-28T20:28:02Z</published>
+    <link type="text/html" href="http://twitter.com/robwindsor/statuses/17277815518" rel="alternate"/>
+    <title>Hey, everything is about dot-this and dot-that. Dotta-bing, dotta-boom and you're done, Oh!  #dnrlive</title>
+    <content type="html">Hey, everything is about dot-this and dot-that. Dotta-&lt;b&gt;bing&lt;/b&gt;, dotta-boom and you&amp;apos;re done, Oh!  &lt;a href=&quot;http://search.twitter.com/search?q=%23dnrlive&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#dnrlive');&quot;&gt;#dnrlive&lt;/a&gt;</content>
+    <updated>2010-06-28T20:28:02Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/857661448/ObjectSharp02_normal.jpg" rel="image"/>
+    <google:location>Toronto, ON, Canada</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>robwindsor (Rob Windsor)</name>
+      <uri>http://twitter.com/robwindsor</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17277224042</id>
+    <published>2010-06-28T20:19:29Z</published>
+    <link type="text/html" href="http://twitter.com/fnemecek/statuses/17277224042" rel="alternate"/>
+    <title>I'm off to raise hell at the Save Our Parks rally.  Mayor Dave Bing and the City Council want to close 77 parks in Detroit.  #Detroit</title>
+    <content type="html">I&amp;apos;m off to raise hell at the Save Our Parks rally.  Mayor Dave &lt;b&gt;Bing&lt;/b&gt; and the City Council want to close 77 parks in Detroit.  &lt;a href=&quot;http://search.twitter.com/search?q=%23Detroit&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#Detroit');&quot;&gt;#Detroit&lt;/a&gt;</content>
+    <updated>2010-06-28T20:19:29Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/432755264/8_Lying_On_Its_Side_normal.jpg" rel="image"/>
+    <google:location>&#220;T: 42.350561,-83.044769</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>fnemecek (Frank Nemecek)</name>
+      <uri>http://twitter.com/fnemecek</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17276068672</id>
+    <published>2010-06-28T20:00:00Z</published>
+    <link type="text/html" href="http://twitter.com/nberardi/statuses/17276068672" rel="alternate"/>
+    <title>RT @bing RT @rickdejarnette: POST from Bing Webmaster Center: Bing crawler: bingbot on the horizon  http://bit.ly/9Ukurb</title>
+    <content type="html">RT &lt;a href=&quot;http://twitter.com/bing&quot;&gt;@&lt;b&gt;bing&lt;/b&gt;&lt;/a&gt; RT &lt;a href=&quot;http://twitter.com/rickdejarnette&quot;&gt;@rickdejarnette&lt;/a&gt;: POST from &lt;b&gt;Bing&lt;/b&gt; Webmaster Center: &lt;b&gt;Bing&lt;/b&gt; crawler: bingbot on the horizon  &lt;a href=&quot;http://bit.ly/9Ukurb&quot;&gt;http://bit.ly/9Ukurb&lt;/a&gt;</content>
+    <updated>2010-06-28T20:00:00Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/718225759/Berardi__Nicholas__head__normal.jpg" rel="image"/>
+    <google:location>Philadelphia, PA</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.metrotwit.com/&quot; rel=&quot;nofollow&quot;&gt;MetroTwit&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>nberardi (Nick Berardi)</name>
+      <uri>http://twitter.com/nberardi</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17276063537</id>
+    <published>2010-06-28T19:59:55Z</published>
+    <link type="text/html" href="http://twitter.com/ashleystrain/statuses/17276063537" rel="alternate"/>
+    <title>Retweet this &amp; @Bing will donate $10 to @CNN's Gulf Telethon up to $100K. More at http://bit.ly/howtodonate. #BingforGulf</title>
+    <content type="html">Retweet this &amp;amp; &lt;a href=&quot;http://twitter.com/Bing&quot;&gt;@&lt;b&gt;Bing&lt;/b&gt;&lt;/a&gt; will donate $10 to &lt;a href=&quot;http://twitter.com/CNN&quot;&gt;@CNN&lt;/a&gt;&amp;apos;s Gulf Telethon up to $100K. More at &lt;a href=&quot;http://bit.ly/howtodonate&quot;&gt;http://bit.ly/howtodonate&lt;/a&gt;. &lt;a href=&quot;http://search.twitter.com/search?q=%23BingforGulf&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#BingforGulf');&quot;&gt;#BingforGulf&lt;/a&gt;</content>
+    <updated>2010-06-28T19:59:55Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/872987297/menb_normal.jpg" rel="image"/>
+    <google:location>New Jersey</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://hope140.org&quot; rel=&quot;nofollow&quot;&gt;Hope140&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>ashleystrain (ashleystrain)</name>
+      <uri>http://twitter.com/ashleystrain</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17275747130</id>
+    <published>2010-06-28T19:54:28Z</published>
+    <link type="text/html" href="http://twitter.com/kevinphanley/statuses/17275747130" rel="alternate"/>
+    <title>@bing iPhone app-Tighten up some functional stuff &amp; you've got me going to 1 place for all my social needs. Search &amp; Maps will follow.</title>
+    <content type="html">&lt;a href=&quot;http://twitter.com/bing&quot;&gt;@&lt;b&gt;bing&lt;/b&gt;&lt;/a&gt; iPhone app-Tighten up some functional stuff &amp;amp; you&amp;apos;ve got me going to 1 place for all my social needs. Search &amp;amp; Maps will follow.</content>
+    <updated>2010-06-28T19:54:28Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/73566963/2684819307_11eae8f46e_o_normal.jpg" rel="image"/>
+    <google:location>scranton, pa</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.discoverbing.com/mobile&quot; rel=&quot;nofollow&quot;&gt;Bing for iPhone&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>kevinphanley (Kevin P Hanley)</name>
+      <uri>http://twitter.com/kevinphanley</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17275115713</id>
+    <published>2010-06-28T19:45:28Z</published>
+    <link type="text/html" href="http://twitter.com/OhHeyItsTodd/statuses/17275115713" rel="alternate"/>
+    <title>@carolanneeee im only shady when im sitting under a tree in the summer.  bada bing!</title>
+    <content type="html">&lt;a href=&quot;http://twitter.com/carolanneeee&quot;&gt;@carolanneeee&lt;/a&gt; im only shady when im sitting under a tree in the summer.  bada &lt;b&gt;bing&lt;/b&gt;!</content>
+    <updated>2010-06-28T19:45:28Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/987787644/Photo_81_normal.jpg" rel="image"/>
+    <google:location>New Jersey</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>OhHeyItsTodd (Todd Christensen)</name>
+      <uri>http://twitter.com/OhHeyItsTodd</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17275053801</id>
+    <published>2010-06-28T19:44:21Z</published>
+    <link type="text/html" href="http://twitter.com/CarnivalVincy/statuses/17275053801" rel="alternate"/>
+    <title>A nice lil synopsis and visual stats of nations in #WorldCup 2010 - http://bit.ly/9E6kpJ</title>
+    <content type="html">A nice lil synopsis and visual stats of nations in &lt;a href=&quot;http://search.twitter.com/search?q=%23WorldCup&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#WorldCup');&quot;&gt;#WorldCup&lt;/a&gt; 2010 - &lt;a href=&quot;http://bit.ly/9E6kpJ&quot;&gt;http://bit.ly/9E6kpJ&lt;/a&gt;</content>
+    <updated>2010-06-28T19:44:21Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/810626102/CarnivalVincyFlag_normal.jpg" rel="image"/>
+    <google:location>43.652500,-79.381667</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://github.com/cezarsa/chromed_bird&quot; rel=&quot;nofollow&quot;&gt;Chromed Bird&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>CarnivalVincy (Carnival Vincy)</name>
+      <uri>http://twitter.com/CarnivalVincy</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17274894331</id>
+    <published>2010-06-28T19:41:23Z</published>
+    <link type="text/html" href="http://twitter.com/LaurenRosenblum/statuses/17274894331" rel="alternate"/>
+    <title>Microsoft Search Engine to replace MSNbot with Bingbot. Bing Webmaster Blog: http://bit.ly/9Ukurb #SEO</title>
+    <content type="html">Microsoft Search Engine to replace MSNbot with Bingbot. &lt;b&gt;Bing&lt;/b&gt; Webmaster Blog: &lt;a href=&quot;http://bit.ly/9Ukurb&quot;&gt;http://bit.ly/9Ukurb&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23SEO&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#SEO');&quot;&gt;#SEO&lt;/a&gt;</content>
+    <updated>2010-06-28T19:41:23Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/749517613/OutriderHoliday_040_cropped2_normal.jpg" rel="image"/>
+    <google:location>Toronto, Canada</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>LaurenRosenblum (Lauren Rosenblum)</name>
+      <uri>http://twitter.com/LaurenRosenblum</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17274893778</id>
+    <published>2010-06-28T19:41:22Z</published>
+    <link type="text/html" href="http://twitter.com/outridercanada/statuses/17274893778" rel="alternate"/>
+    <title>Microsoft Search Engine to replace MSNbot with Bingbot. Bing Webmaster Blog: http://bit.ly/9Ukurb #SEO</title>
+    <content type="html">Microsoft Search Engine to replace MSNbot with Bingbot. &lt;b&gt;Bing&lt;/b&gt; Webmaster Blog: &lt;a href=&quot;http://bit.ly/9Ukurb&quot;&gt;http://bit.ly/9Ukurb&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23SEO&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#SEO');&quot;&gt;#SEO&lt;/a&gt;</content>
+    <updated>2010-06-28T19:41:22Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/316794236/outrider_logo_normal.JPG" rel="image"/>
+    <google:location>Toronto, Canada</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>outridercanada (Outrider Canada)</name>
+      <uri>http://twitter.com/outridercanada</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17274154279</id>
+    <published>2010-06-28T19:28:46Z</published>
+    <link type="text/html" href="http://twitter.com/JessicaAnn18/statuses/17274154279" rel="alternate"/>
+    <title>Work til 9...then ambers... home to clean my room.. then to bing with amber to watch eclipse:).. txt me</title>
+    <content type="html">Work til 9...then ambers... home to clean my room.. then to &lt;b&gt;bing&lt;/b&gt; with amber to watch eclipse:).. txt me</content>
+    <updated>2010-06-28T19:28:46Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/688900700/jess_normal.jpg" rel="image"/>
+    <google:location>Norwich, New York</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.myspace.com/sync&quot; rel=&quot;nofollow&quot;&gt;MySpace&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>JessicaAnn18 (Jessica)</name>
+      <uri>http://twitter.com/JessicaAnn18</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17273803305</id>
+    <published>2010-06-28T19:23:11Z</published>
+    <link type="text/html" href="http://twitter.com/nternetincome/statuses/17273803305" rel="alternate"/>
+    <title>Microsoft To Replace MSNBot With BingBot October 1, 2010: The Bing Search Blog announced that on October 1st, MSNB... http://bit.ly/avp2eq</title>
+    <content type="html">Microsoft To Replace MSNBot With BingBot October 1, 2010: The &lt;b&gt;Bing&lt;/b&gt; Search Blog announced that on October 1st, MSNB... &lt;a href=&quot;http://bit.ly/avp2eq&quot;&gt;http://bit.ly/avp2eq&lt;/a&gt;</content>
+    <updated>2010-06-28T19:23:11Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/748307409/earth-air-fire-water_normal.jpg" rel="image"/>
+    <google:location>Philadelphia</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>nternetincome (Internet Income )</name>
+      <uri>http://twitter.com/nternetincome</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17273614715</id>
+    <published>2010-06-28T19:20:18Z</published>
+    <link type="text/html" href="http://twitter.com/thatsnotjoe/statuses/17273614715" rel="alternate"/>
+    <title>Bing finally updates it's mobile site making it much more iPhone friendly. This might be adios for Google search on my iPhone.</title>
+    <content type="html">&lt;b&gt;Bing&lt;/b&gt; finally updates it&amp;apos;s mobile site making it much more iPhone friendly. This might be adios for Google search on my iPhone.</content>
+    <updated>2010-06-28T19:20:18Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1012906474/image_normal.jpg" rel="image"/>
+    <google:location>Manayunk, Philadelphia</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com/&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>thatsnotjoe (J&#246;s&#235;ph Br&#228;dl&#235;&#255;)</name>
+      <uri>http://twitter.com/thatsnotjoe</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17271713699</id>
+    <published>2010-06-28T18:50:37Z</published>
+    <link type="text/html" href="http://twitter.com/aesahj/statuses/17271713699" rel="alternate"/>
+    <title>HAHA: Bing's autocomplete thinks it's &quot;stupid&quot; and &quot;rubbish&quot;. http://ow.ly/24kDh</title>
+    <content type="html">HAHA: &lt;b&gt;Bing&lt;/b&gt;&amp;apos;s autocomplete thinks it&amp;apos;s &amp;quot;stupid&amp;quot; and &amp;quot;rubbish&amp;quot;. &lt;a href=&quot;http://ow.ly/24kDh&quot;&gt;http://ow.ly/24kDh&lt;/a&gt;</content>
+    <updated>2010-06-28T18:50:37Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1017830206/n1401563_34444448_2782_normal.jpg" rel="image"/>
+    <google:location>Washington, DC</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>aesahj (Aesah Javier)</name>
+      <uri>http://twitter.com/aesahj</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17271268680</id>
+    <published>2010-06-28T18:42:33Z</published>
+    <link type="text/html" href="http://twitter.com/Taggart451/statuses/17271268680" rel="alternate"/>
+    <title>Every time someone @ mentions me and @TweetDeck goes BING I feel like a kid who gets a birthday letter in the mail. #shibby</title>
+    <content type="html">Every time someone @ mentions me and &lt;a href=&quot;http://twitter.com/TweetDeck&quot;&gt;@TweetDeck&lt;/a&gt; goes &lt;b&gt;BING&lt;/b&gt; I feel like a kid who gets a birthday letter in the mail. &lt;a href=&quot;http://search.twitter.com/search?q=%23shibby&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#shibby');&quot;&gt;#shibby&lt;/a&gt;</content>
+    <updated>2010-06-28T18:42:33Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/972570390/twit_snake_normal.jpg" rel="image"/>
+    <google:location>oh-io</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.tweetdeck.com/&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>Taggart451 (Corey Schwanz)</name>
+      <uri>http://twitter.com/Taggart451</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17271073823</id>
+    <published>2010-06-28T18:39:13Z</published>
+    <link type="text/html" href="http://twitter.com/Wylieknowords/statuses/17271073823" rel="alternate"/>
+    <title>&quot;I'm off the grid untrending and playing with words and pixels to soar before I become sore. You can't Bing or Google my thoughts or fears.&quot;</title>
+    <content type="html">&amp;quot;I&amp;apos;m off the grid untrending and playing with words and pixels to soar before I become sore. You can&amp;apos;t &lt;b&gt;Bing&lt;/b&gt; or Google my thoughts or fears.&amp;quot;</content>
+    <updated>2010-06-28T18:39:13Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/127494093/wjones_twitter_1__normal.JPG" rel="image"/>
+    <google:location>Richmond, Virginia, USA, earth</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>Wylieknowords (Wylie Jones)</name>
+      <uri>http://twitter.com/Wylieknowords</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17270782532</id>
+    <published>2010-06-28T18:34:11Z</published>
+    <link type="text/html" href="http://twitter.com/smarcopoulos/statuses/17270782532" rel="alternate"/>
+    <title>@AccordionGuy when will #MSFT release Bing iPhone App in Canada?</title>
+    <content type="html">&lt;a href=&quot;http://twitter.com/AccordionGuy&quot;&gt;@AccordionGuy&lt;/a&gt; when will &lt;a href=&quot;http://search.twitter.com/search?q=%23MSFT&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#MSFT');&quot;&gt;#MSFT&lt;/a&gt; release &lt;b&gt;Bing&lt;/b&gt; iPhone App in Canada?</content>
+    <updated>2010-06-28T18:34:11Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/898541095/me_normal.jpg" rel="image"/>
+    <google:location>Toronto, ON, Canada</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>smarcopoulos (Seraphim Marcopoulos)</name>
+      <uri>http://twitter.com/smarcopoulos</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17270215338</id>
+    <published>2010-06-28T18:25:01Z</published>
+    <link type="text/html" href="http://twitter.com/GiftCards4Sale_/statuses/17270215338" rel="alternate"/>
+    <title>$500 Best Buy Giftcard - immediate ship, use 10% Bing!: US $559.99 End Date: Monday Jul-26-2010 16:57:26 PDTBuy http://url4.eu/55emd</title>
+    <content type="html">$500 Best Buy Giftcard - immediate ship, use 10% &lt;b&gt;Bing&lt;/b&gt;!: US $559.99 End Date: Monday Jul-26-2010 16:57:26 PDTBuy &lt;a href=&quot;http://url4.eu/55emd&quot;&gt;http://url4.eu/55emd&lt;/a&gt;</content>
+    <updated>2010-06-28T18:25:01Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1008606664/IMAGE76_normal.jpg" rel="image"/>
+    <google:location>OH</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://rss2twitter.com/&quot; rel=&quot;nofollow&quot;&gt;RSS2Twitter&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>GiftCards4Sale_ (Gift Cards)</name>
+      <uri>http://twitter.com/GiftCards4Sale_</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17270211450</id>
+    <published>2010-06-28T18:24:57Z</published>
+    <link type="text/html" href="http://twitter.com/detroitnews/statuses/17270211450" rel="alternate"/>
+    <title>Watson explores taking Bing to court over plan to close Detroit parks: Detroit -- Councilwoman JoAnn Watson wants ... http://bit.ly/9IXPgD</title>
+    <content type="html">Watson explores taking &lt;b&gt;Bing&lt;/b&gt; to court over plan to close Detroit parks: Detroit -- Councilwoman JoAnn Watson wants ... &lt;a href=&quot;http://bit.ly/9IXPgD&quot;&gt;http://bit.ly/9IXPgD&lt;/a&gt;</content>
+    <updated>2010-06-28T18:24:57Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/59553458/detskyline_normal.jpg" rel="image"/>
+    <google:location>Detroit, MI</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>detroitnews (DetroitNews)</name>
+      <uri>http://twitter.com/detroitnews</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17269929111</id>
+    <published>2010-06-28T18:20:17Z</published>
+    <link type="text/html" href="http://twitter.com/semlady/statuses/17269929111" rel="alternate"/>
+    <title>Coming in October: BingBot! - &amp; it will honor msnbot instructions http://ow.ly/24jDQ</title>
+    <content type="html">Coming in October: BingBot! - &amp;amp; it will honor msnbot instructions &lt;a href=&quot;http://ow.ly/24jDQ&quot;&gt;http://ow.ly/24jDQ&lt;/a&gt;</content>
+    <updated>2010-06-28T18:20:17Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/58691113/semlady_48x48_normal.jpg" rel="image"/>
+    <google:location>Toronto, Canada</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>semlady (Helen M Overland)</name>
+      <uri>http://twitter.com/semlady</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17269649232</id>
+    <published>2010-06-28T18:15:32Z</published>
+    <link type="text/html" href="http://twitter.com/ryon55/statuses/17269649232" rel="alternate"/>
+    <title>@marcoarment This is supposed to be what Bing is better for, but I haven't tried it myself.</title>
+    <content type="html">&lt;a href=&quot;http://twitter.com/marcoarment&quot;&gt;@marcoarment&lt;/a&gt; This is supposed to be what &lt;b&gt;Bing&lt;/b&gt; is better for, but I haven&amp;apos;t tried it myself.</content>
+    <updated>2010-06-28T18:15:32Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/562176457/Magritte_normal.png" rel="image"/>
+    <google:location>Philadelphia</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com/&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>ryon55 (Ryon)</name>
+      <uri>http://twitter.com/ryon55</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17268884014</id>
+    <published>2010-06-28T18:02:44Z</published>
+    <link type="text/html" href="http://twitter.com/EverythingMS/statuses/17268884014" rel="alternate"/>
+    <title>Bing&#8217;s first year: good for advertisers? http://bit.ly/9mYQNK</title>
+    <content type="html">Bing&#8217;s first year: good for advertisers? &lt;a href=&quot;http://bit.ly/9mYQNK&quot;&gt;http://bit.ly/9mYQNK&lt;/a&gt;</content>
+    <updated>2010-06-28T18:02:44Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/76731057/ems_logo_normal.png" rel="image"/>
+    <google:location>C:\Redmond</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>EverythingMS (Everything Microsoft)</name>
+      <uri>http://twitter.com/EverythingMS</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17268232200</id>
+    <published>2010-06-28T17:52:02Z</published>
+    <link type="text/html" href="http://twitter.com/DetroitPolitics/statuses/17268232200" rel="alternate"/>
+    <title>http://detnews.com Watson explores taking Bing to court over plan to close Detroit parks: Detroit -- Counc... http://bit.ly/9IXPgD #detroit</title>
+    <content type="html">&lt;a href=&quot;http://detnews.com&quot;&gt;http://detnews.com&lt;/a&gt; Watson explores taking &lt;b&gt;Bing&lt;/b&gt; to court over plan to close Detroit parks: Detroit -- Counc... &lt;a href=&quot;http://bit.ly/9IXPgD&quot;&gt;http://bit.ly/9IXPgD&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23detroit&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#detroit');&quot;&gt;#detroit&lt;/a&gt;</content>
+    <updated>2010-06-28T17:52:02Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/391538441/DPICON_normal.jpg" rel="image"/>
+    <google:location>Detroit, MI USA</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>DetroitPolitics (Detroit Politics)</name>
+      <uri>http://twitter.com/DetroitPolitics</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17268197990</id>
+    <published>2010-06-28T17:51:28Z</published>
+    <link type="text/html" href="http://twitter.com/detroitnewsnow/statuses/17268197990" rel="alternate"/>
+    <title>Watson explores taking Bing to court over plan to close Detroit parks: Detroit -- Councilwoman JoAnn Watson wants ... http://bit.ly/9IXPgD</title>
+    <content type="html">Watson explores taking &lt;b&gt;Bing&lt;/b&gt; to court over plan to close Detroit parks: Detroit -- Councilwoman JoAnn Watson wants ... &lt;a href=&quot;http://bit.ly/9IXPgD&quot;&gt;http://bit.ly/9IXPgD&lt;/a&gt;</content>
+    <updated>2010-06-28T17:51:28Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/448738630/D_normal.png" rel="image"/>
+    <google:location>Detroit Mi</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>detroitnewsnow (Detroit News Now)</name>
+      <uri>http://twitter.com/detroitnewsnow</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17267963299</id>
+    <published>2010-06-28T17:47:32Z</published>
+    <link type="text/html" href="http://twitter.com/dtsportsfan/statuses/17267963299" rel="alternate"/>
+    <title>Samsung Fascinate (Galaxy S) coming to Verizon sporting Bing Maps and Search http://bit.ly/aRhm40</title>
+    <content type="html">Samsung Fascinate (Galaxy S) coming to Verizon sporting &lt;b&gt;Bing&lt;/b&gt; Maps and Search &lt;a href=&quot;http://bit.ly/aRhm40&quot;&gt;http://bit.ly/aRhm40&lt;/a&gt;</content>
+    <updated>2010-06-28T17:47:32Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/265419939/me_normal.jpg" rel="image"/>
+    <google:location>&#220;T: 37.370972,-79.319653</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>dtsportsfan (David Turner)</name>
+      <uri>http://twitter.com/dtsportsfan</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17267144988</id>
+    <published>2010-06-28T17:34:08Z</published>
+    <link type="text/html" href="http://twitter.com/manicdani/statuses/17267144988" rel="alternate"/>
+    <title>&quot;This is my timey-wimey detector.  Goes &quot;bing&quot; when there's stuff.&quot;  I love Doctor Who.</title>
+    <content type="html">&amp;quot;This is my timey-wimey detector.  Goes &amp;quot;&lt;b&gt;bing&lt;/b&gt;&amp;quot; when there&amp;apos;s stuff.&amp;quot;  I love Doctor Who.</content>
+    <updated>2010-06-28T17:34:08Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1029068804/PlatesIcon_normal.jpg" rel="image"/>
+    <google:location>Richmond, Virginia</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>manicdani (Dani Palmer)</name>
+      <uri>http://twitter.com/manicdani</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17266760382</id>
+    <published>2010-06-28T17:27:55Z</published>
+    <link type="text/html" href="http://twitter.com/FMQB/statuses/17266760382" rel="alternate"/>
+    <title>FMQB FYI... Feature on WMG &amp; 360 deals, Lollapalooza under investigation, Microsoft integrating Zune into Bing searches http://bit.ly/b7LDup</title>
+    <content type="html">FMQB FYI... Feature on WMG &amp;amp; 360 deals, Lollapalooza under investigation, Microsoft integrating Zune into &lt;b&gt;Bing&lt;/b&gt; searches &lt;a href=&quot;http://bit.ly/b7LDup&quot;&gt;http://bit.ly/b7LDup&lt;/a&gt;</content>
+    <updated>2010-06-28T17:27:55Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/111162993/FMQB_ICON_aol_normal.gif" rel="image"/>
+    <google:location>Cherry Hill, NJ</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>FMQB (FMQB)</name>
+      <uri>http://twitter.com/FMQB</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17266079293</id>
+    <published>2010-06-28T17:16:54Z</published>
+    <link type="text/html" href="http://twitter.com/DetroitPolitics/statuses/17266079293" rel="alternate"/>
+    <title>http://detnews.com Bing cancels confab on mayoral control of DPS: Detroit --A meeting today between Mayor ... http://bit.ly/9iZ1xv #detroit</title>
+    <content type="html">&lt;a href=&quot;http://detnews.com&quot;&gt;http://detnews.com&lt;/a&gt; &lt;b&gt;Bing&lt;/b&gt; cancels confab on mayoral control of DPS: Detroit --A meeting today between Mayor ... &lt;a href=&quot;http://bit.ly/9iZ1xv&quot;&gt;http://bit.ly/9iZ1xv&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23detroit&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#detroit');&quot;&gt;#detroit&lt;/a&gt;</content>
+    <updated>2010-06-28T17:16:54Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/391538441/DPICON_normal.jpg" rel="image"/>
+    <google:location>Detroit, MI USA</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>DetroitPolitics (Detroit Politics)</name>
+      <uri>http://twitter.com/DetroitPolitics</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17266046322</id>
+    <published>2010-06-28T17:16:21Z</published>
+    <link type="text/html" href="http://twitter.com/detroitnews/statuses/17266046322" rel="alternate"/>
+    <title>Bing cancels confab on mayoral control of DPS: Detroit --A meeting today between Mayor Dave Bing and community lea... http://bit.ly/9iZ1xv</title>
+    <content type="html">&lt;b&gt;Bing&lt;/b&gt; cancels confab on mayoral control of DPS: Detroit --A meeting today between Mayor Dave &lt;b&gt;Bing&lt;/b&gt; and community lea... &lt;a href=&quot;http://bit.ly/9iZ1xv&quot;&gt;http://bit.ly/9iZ1xv&lt;/a&gt;</content>
+    <updated>2010-06-28T17:16:21Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/59553458/detskyline_normal.jpg" rel="image"/>
+    <google:location>Detroit, MI</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>detroitnews (DetroitNews)</name>
+      <uri>http://twitter.com/detroitnews</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17265687541</id>
+    <published>2010-06-28T17:10:39Z</published>
+    <link type="text/html" href="http://twitter.com/RahevarM/statuses/17265687541" rel="alternate"/>
+    <title>Bing Community: I said I don't bother with the keywords meta tag - I didn't say that I don't bother with Bing ... B... http://awe.sm/57wEY</title>
+    <content type="html">&lt;b&gt;Bing&lt;/b&gt; Community: I said I don&amp;apos;t bother with the keywords meta tag - I didn&amp;apos;t say that I don&amp;apos;t bother with &lt;b&gt;Bing&lt;/b&gt; ... B... &lt;a href=&quot;http://awe.sm/57wEY&quot;&gt;http://awe.sm/57wEY&lt;/a&gt;</content>
+    <updated>2010-06-28T17:10:39Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/938366344/rahevarm_normal.jpg" rel="image"/>
+    <google:location>Detroit</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>RahevarM (MRahevar)</name>
+      <uri>http://twitter.com/RahevarM</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17265337411</id>
+    <published>2010-06-28T17:05:07Z</published>
+    <link type="text/html" href="http://twitter.com/SmileyHanchulak/statuses/17265337411" rel="alternate"/>
+    <title>Microsoft's Bing turns up the heat in war with Google http://ht.ly/246uc</title>
+    <content type="html">Microsoft&amp;apos;s &lt;b&gt;Bing&lt;/b&gt; turns up the heat in war with Google &lt;a href=&quot;http://ht.ly/246uc&quot;&gt;http://ht.ly/246uc&lt;/a&gt;</content>
+    <updated>2010-06-28T17:05:07Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/384597109/3ac509c_normal.png" rel="image"/>
+    <google:location>Akron, Ohio</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>SmileyHanchulak (Smiley Hanchulak)</name>
+      <uri>http://twitter.com/SmileyHanchulak</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17265279337</id>
+    <published>2010-06-28T17:04:13Z</published>
+    <link type="text/html" href="http://twitter.com/MyEvalyn/statuses/17265279337" rel="alternate"/>
+    <title>Retweet this &amp; @Bing will donate $10 to @CNN's Gulf Telethon up to $100K. More at http://bit.ly/howtodonate. #BingforGulf</title>
+    <content type="html">Retweet this &amp;amp; &lt;a href=&quot;http://twitter.com/Bing&quot;&gt;@&lt;b&gt;Bing&lt;/b&gt;&lt;/a&gt; will donate $10 to &lt;a href=&quot;http://twitter.com/CNN&quot;&gt;@CNN&lt;/a&gt;&amp;apos;s Gulf Telethon up to $100K. More at &lt;a href=&quot;http://bit.ly/howtodonate&quot;&gt;http://bit.ly/howtodonate&lt;/a&gt;. &lt;a href=&quot;http://search.twitter.com/search?q=%23BingforGulf&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#BingforGulf');&quot;&gt;#BingforGulf&lt;/a&gt;</content>
+    <updated>2010-06-28T17:04:13Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/876221450/24509_105523379468515_100000325610807_134709_1385963_n_normal.jpg" rel="image"/>
+    <google:location>Toronto</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://hope140.org&quot; rel=&quot;nofollow&quot;&gt;Hope140&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>MyEvalyn (Evalyn )</name>
+      <uri>http://twitter.com/MyEvalyn</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17264631870</id>
+    <published>2010-06-28T16:54:18Z</published>
+    <link type="text/html" href="http://twitter.com/_MFrench_/statuses/17264631870" rel="alternate"/>
+    <title>http://bit.ly/cxizNZ although we lost to ghana, its great to see the enthusiasm compared to 06..bring on 2014! (cont) http://tl.gd/26gk7k</title>
+    <content type="html">&lt;a href=&quot;http://bit.ly/cxizNZ&quot;&gt;http://bit.ly/cxizNZ&lt;/a&gt; although we lost to ghana, its great to see the enthusiasm compared to 06..bring on 2014! (cont) &lt;a href=&quot;http://tl.gd/26gk7k&quot;&gt;http://tl.gd/26gk7k&lt;/a&gt;</content>
+    <updated>2010-06-28T16:54:18Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/974424812/Photo_on_2010-06-09_at_13.30__2_normal.jpg" rel="image"/>
+    <google:location>Pittsburgh, PA</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com&quot; rel=&quot;nofollow&quot;&gt;Tweetie for Mac&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>_MFrench_ (Matt French)</name>
+      <uri>http://twitter.com/_MFrench_</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17264059253</id>
+    <published>2010-06-28T16:45:14Z</published>
+    <link type="text/html" href="http://twitter.com/cosesmallbiz/statuses/17264059253" rel="alternate"/>
+    <title>Looking for clients or to be found in local web searches? Try Local University! Presenters from Bing, Google and more. http://bit.ly/c3z2SI</title>
+    <content type="html">Looking for clients or to be found in local web searches? Try Local University! Presenters from &lt;b&gt;Bing&lt;/b&gt;, Google and more. &lt;a href=&quot;http://bit.ly/c3z2SI&quot;&gt;http://bit.ly/c3z2SI&lt;/a&gt;</content>
+    <updated>2010-06-28T16:45:14Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/435708405/COSE_LOGO_FB_normal.jpg" rel="image"/>
+    <google:location>Cleveland, OH</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>cosesmallbiz (COSEsmallbiz)</name>
+      <uri>http://twitter.com/cosesmallbiz</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17263799469</id>
+    <published>2010-06-28T16:41:07Z</published>
+    <link type="text/html" href="http://twitter.com/GiftCards4Sale_/statuses/17263799469" rel="alternate"/>
+    <title>$500 SEARS KMART LANDS END Gift Card, 8% Bing cash bk: US $492.00 End Date: Tuesday Jul-27-2010 23:09:28 PDTBuy http://url4.eu/55QEa</title>
+    <content type="html">$500 SEARS KMART LANDS END Gift Card, 8% &lt;b&gt;Bing&lt;/b&gt; cash bk: US $492.00 End Date: Tuesday Jul-27-2010 23:09:28 PDTBuy &lt;a href=&quot;http://url4.eu/55QEa&quot;&gt;http://url4.eu/55QEa&lt;/a&gt;</content>
+    <updated>2010-06-28T16:41:07Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1008606664/IMAGE76_normal.jpg" rel="image"/>
+    <google:location>OH</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://rss2twitter.com/&quot; rel=&quot;nofollow&quot;&gt;RSS2Twitter&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>GiftCards4Sale_ (Gift Cards)</name>
+      <uri>http://twitter.com/GiftCards4Sale_</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17263463835</id>
+    <published>2010-06-28T16:35:53Z</published>
+    <link type="text/html" href="http://twitter.com/JustinOnTwitr/statuses/17263463835" rel="alternate"/>
+    <title>See, when a carrier changes the default search of an Android to Yahoo!, or adds Bing Maps, it defeats the purpose of being a &quot;with...</title>
+    <content type="html">See, when a carrier changes the default search of an Android to Yahoo!, or adds &lt;b&gt;Bing&lt;/b&gt; Maps, it defeats the purpose of being a &amp;quot;with...</content>
+    <updated>2010-06-28T16:35:53Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1023320510/71ae4c23-8ef4-4119-b0c6-98dc830c99fd_normal.png" rel="image"/>
+    <google:location>Toronto</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>JustinOnTwitr (Justin)</name>
+      <uri>http://twitter.com/JustinOnTwitr</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17263157600</id>
+    <published>2010-06-28T16:31:08Z</published>
+    <link type="text/html" href="http://twitter.com/slithy_toves/statuses/17263157600" rel="alternate"/>
+    <title>About to head to Bing-bing town to meet the big BIG boss! Field trip!</title>
+    <content type="html">About to head to &lt;b&gt;Bing&lt;/b&gt;-&lt;b&gt;bing&lt;/b&gt; town to meet the big BIG boss! Field trip!</content>
+    <updated>2010-06-28T16:31:08Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/706014426/us__9_of_1__normal.jpg" rel="image"/>
+    <google:location>Ithaca, NY</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com/&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>slithy_toves (slithy_toves)</name>
+      <uri>http://twitter.com/slithy_toves</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17262981514</id>
+    <published>2010-06-28T16:28:27Z</published>
+    <link type="text/html" href="http://twitter.com/sbplease/statuses/17262981514" rel="alternate"/>
+    <title>Dag :-( I don't even drive thoo *sniff sniff* RT @SLiCe_Th3BeauTy: @SbPlease don't TOYAAAA me bing a ling I'm (cont) http://tl.gd/26g57l</title>
+    <content type="html">Dag :-( I don&amp;apos;t even drive thoo *sniff sniff* RT &lt;a href=&quot;http://twitter.com/SLiCe_Th3BeauTy&quot;&gt;@SLiCe_Th3BeauTy&lt;/a&gt;: &lt;a href=&quot;http://twitter.com/SbPlease&quot;&gt;@SbPlease&lt;/a&gt; don&amp;apos;t TOYAAAA me &lt;b&gt;bing&lt;/b&gt; a ling I&amp;apos;m (cont) &lt;a href=&quot;http://tl.gd/26g57l&quot;&gt;http://tl.gd/26g57l&lt;/a&gt;</content>
+    <updated>2010-06-28T16:28:27Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1032893142/126362816_normal.jpg" rel="image"/>
+    <google:location>Capitol Heights, MD</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.ubertwitter.com/bb/download.php&quot; rel=&quot;nofollow&quot;&gt;&#220;berTwitter&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>sbplease (SbPlease Beiber! )</name>
+      <uri>http://twitter.com/sbplease</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17262741520</id>
+    <published>2010-06-28T16:24:44Z</published>
+    <link type="text/html" href="http://twitter.com/geoffreywiseman/statuses/17262741520" rel="alternate"/>
+    <title>@marcoarment Google has been unable to defeat the affiliate marketers, making product searches near-useless. @bing should innovate /there/.</title>
+    <content type="html">&lt;a href=&quot;http://twitter.com/marcoarment&quot;&gt;@marcoarment&lt;/a&gt; Google has been unable to defeat the affiliate marketers, making product searches near-useless. &lt;a href=&quot;http://twitter.com/bing&quot;&gt;@&lt;b&gt;bing&lt;/b&gt;&lt;/a&gt; should innovate /there/.</content>
+    <updated>2010-06-28T16:24:44Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/29413042/geoff_normal.jpg" rel="image"/>
+    <google:location>Toronto, ON</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com&quot; rel=&quot;nofollow&quot;&gt;Tweetie for Mac&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>geoffreywiseman (Geoffrey Wiseman)</name>
+      <uri>http://twitter.com/geoffreywiseman</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17262665656</id>
+    <published>2010-06-28T16:23:34Z</published>
+    <link type="text/html" href="http://twitter.com/rubin2/statuses/17262665656" rel="alternate"/>
+    <title>I never understood asking questions on twitter when we have these things called Google, Bing, Wikipedia.</title>
+    <content type="html">I never understood asking questions on twitter when we have these things called Google, &lt;b&gt;Bing&lt;/b&gt;, Wikipedia.</content>
+    <updated>2010-06-28T16:23:34Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/1008500155/pearly_world_normal.jpg" rel="image"/>
+    <google:location>&#220;T: 43.679423,-79.602306</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.ubertwitter.com/bb/download.php&quot; rel=&quot;nofollow&quot;&gt;&#220;berTwitter&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>rubin2 (Mr. Kevin Claiborne)</name>
+      <uri>http://twitter.com/rubin2</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17261698288</id>
+    <published>2010-06-28T16:07:19Z</published>
+    <link type="text/html" href="http://twitter.com/TrekGaila/statuses/17261698288" rel="alternate"/>
+    <title>Retweet this &amp; @Bing will donate $10 to @CNN's Gulf Telethon up to $100K. More at http://bit.ly/howtodonate. #BingforGulf</title>
+    <content type="html">Retweet this &amp;amp; &lt;a href=&quot;http://twitter.com/Bing&quot;&gt;@&lt;b&gt;Bing&lt;/b&gt;&lt;/a&gt; will donate $10 to &lt;a href=&quot;http://twitter.com/CNN&quot;&gt;@CNN&lt;/a&gt;&amp;apos;s Gulf Telethon up to $100K. More at &lt;a href=&quot;http://bit.ly/howtodonate&quot;&gt;http://bit.ly/howtodonate&lt;/a&gt;. &lt;a href=&quot;http://search.twitter.com/search?q=%23BingforGulf&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#BingforGulf');&quot;&gt;#BingforGulf&lt;/a&gt;</content>
+    <updated>2010-06-28T16:07:19Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/978207807/292px-Gaila__Orion_-1_normal.jpg" rel="image"/>
+    <google:location>Maryland</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://hope140.org&quot; rel=&quot;nofollow&quot;&gt;Hope140&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>TrekGaila (Patty Gardner)</name>
+      <uri>http://twitter.com/TrekGaila</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17244459618</id>
+    <published>2010-06-28T11:27:12Z</published>
+    <link type="text/html" href="http://twitter.com/ReddyAyyalapu/statuses/17244459618" rel="alternate"/>
+    <title>New Microsoft Bing Interface Shows What &quot;Decision Engine&quot; Really Means 
+http://ow.ly/244BU 
+#Yam #Microsoft #Bing #DecisionEngine</title>
+    <content type="html">New Microsoft &lt;b&gt;Bing&lt;/b&gt; Interface Shows What &amp;quot;Decision Engine&amp;quot; Really Means 
+&lt;a href=&quot;http://ow.ly/244BU&quot;&gt;http://ow.ly/244BU&lt;/a&gt; 
+&lt;a href=&quot;http://search.twitter.com/search?q=%23Yam&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#Yam');&quot;&gt;#Yam&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23Microsoft&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#Microsoft');&quot;&gt;#Microsoft&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23Bing&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#Bing');&quot;&gt;#&lt;b&gt;Bing&lt;/b&gt;&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23DecisionEngine&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#DecisionEngine');&quot;&gt;#DecisionEngine&lt;/a&gt;</content>
+    <updated>2010-06-28T11:27:12Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/590641127/IMG_2478_40KB_Version_normal.jpg" rel="image"/>
+    <google:location>New Jersey</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>ReddyAyyalapu (Reddy Ayyalapu)</name>
+      <uri>http://twitter.com/ReddyAyyalapu</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17244223041</id>
+    <published>2010-06-28T11:21:59Z</published>
+    <link type="text/html" href="http://twitter.com/social_tweep/statuses/17244223041" rel="alternate"/>
+    <title>Bing Changes Could Attract More Users, More SEO Focus http://bit.ly/b7e6Pe</title>
+    <content type="html">&lt;b&gt;Bing&lt;/b&gt; Changes Could Attract More Users, More SEO Focus &lt;a href=&quot;http://bit.ly/b7e6Pe&quot;&gt;http://bit.ly/b7e6Pe&lt;/a&gt;</content>
+    <updated>2010-06-28T11:21:59Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/866436250/iranviz_sm_1__3_normal.png" rel="image"/>
+    <google:location>Kitchener, Ont.</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.assetize.com&quot; rel=&quot;nofollow&quot;&gt;Assetize.&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>social_tweep (social news)</name>
+      <uri>http://twitter.com/social_tweep</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17243817701</id>
+    <published>2010-06-28T11:12:49Z</published>
+    <link type="text/html" href="http://twitter.com/parsons_mike/statuses/17243817701" rel="alternate"/>
+    <title>Microsoft bought a car for their search engine Bing. They called it the &quot;Bing Bus&quot;.</title>
+    <content type="html">Microsoft bought a car for their search engine &lt;b&gt;Bing&lt;/b&gt;. They called it the &amp;quot;&lt;b&gt;Bing&lt;/b&gt; Bus&amp;quot;.</content>
+    <updated>2010-06-28T11:12:49Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/465447568/marley_normal.JPG" rel="image"/>
+    <google:location>Newfoundland</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>parsons_mike (Mike Parsons)</name>
+      <uri>http://twitter.com/parsons_mike</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17243775805</id>
+    <published>2010-06-28T11:11:51Z</published>
+    <link type="text/html" href="http://twitter.com/social_m_n/statuses/17243775805" rel="alternate"/>
+    <title>Bing Changes Could Attract More Users, More SEO Focus http://bit.ly/cgsS4j</title>
+    <content type="html">&lt;b&gt;Bing&lt;/b&gt; Changes Could Attract More Users, More SEO Focus &lt;a href=&quot;http://bit.ly/cgsS4j&quot;&gt;http://bit.ly/cgsS4j&lt;/a&gt;</content>
+    <updated>2010-06-28T11:11:51Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/716899157/cash_stacks_normal.png" rel="image"/>
+    <google:location>Kitchener, Ont.</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.assetize.com&quot; rel=&quot;nofollow&quot;&gt;Assetize.&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>social_m_n (Social Media New)</name>
+      <uri>http://twitter.com/social_m_n</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17243698074</id>
+    <published>2010-06-28T11:10:05Z</published>
+    <link type="text/html" href="http://twitter.com/social_ttweets/statuses/17243698074" rel="alternate"/>
+    <title>Bing Changes Could Attract More Users, More SEO Focus http://bit.ly/cRl6GQ</title>
+    <content type="html">&lt;b&gt;Bing&lt;/b&gt; Changes Could Attract More Users, More SEO Focus &lt;a href=&quot;http://bit.ly/cRl6GQ&quot;&gt;http://bit.ly/cRl6GQ&lt;/a&gt;</content>
+    <updated>2010-06-28T11:10:05Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/866479225/iranviz_sm_1__3_normal.png" rel="image"/>
+    <google:location>Kitchener, Ont.</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.assetize.com&quot; rel=&quot;nofollow&quot;&gt;Assetize.&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>social_ttweets (Social News tweets)</name>
+      <uri>http://twitter.com/social_ttweets</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17242697994</id>
+    <published>2010-06-28T10:46:53Z</published>
+    <link type="text/html" href="http://twitter.com/Gildo64/statuses/17242697994" rel="alternate"/>
+    <title>Bing Changes Could Attract More Users, More SEO Focus http://bit.ly/a71zmJ</title>
+    <content type="html">&lt;b&gt;Bing&lt;/b&gt; Changes Could Attract More Users, More SEO Focus &lt;a href=&quot;http://bit.ly/a71zmJ&quot;&gt;http://bit.ly/a71zmJ&lt;/a&gt;</content>
+    <updated>2010-06-28T10:46:53Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/383664596/lp_normal.bmp" rel="image"/>
+    <google:location>Kitchener. Ont.</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.assetize.com&quot; rel=&quot;nofollow&quot;&gt;Assetize.&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>Gildo64 (Leo Pedrosa)</name>
+      <uri>http://twitter.com/Gildo64</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17240697128</id>
+    <published>2010-06-28T09:57:52Z</published>
+    <link type="text/html" href="http://twitter.com/StevenWoodroffe/statuses/17240697128" rel="alternate"/>
+    <title>RT @WhatOnEarth: Caption contest: Bing bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invader. Vessel... http://bit.ly/d6EmVb</title>
+    <content type="html">RT &lt;a href=&quot;http://twitter.com/WhatOnEarth&quot;&gt;@WhatOnEarth&lt;/a&gt;: Caption contest: &lt;b&gt;Bing&lt;/b&gt; bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invader. Vessel... &lt;a href=&quot;http://bit.ly/d6EmVb&quot;&gt;http://bit.ly/d6EmVb&lt;/a&gt;</content>
+    <updated>2010-06-28T09:57:52Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/1002959223/IMG_0522_normal.JPG" rel="image"/>
+    <google:location>Riverside, CA (33.946175,-117.</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>StevenWoodroffe (Steven Woodroffe)</name>
+      <uri>http://twitter.com/StevenWoodroffe</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17238812031</id>
+    <published>2010-06-28T09:09:40Z</published>
+    <link type="text/html" href="http://twitter.com/GiftCards4Sale_/statuses/17238812031" rel="alternate"/>
+    <title>$500 Target Gift Card Free Shipping! Use BING CASHBACK: US $505.00 End Date: Sunday Jul-04-2010 19:51:55 PDTBuy http://url4.eu/54MqU</title>
+    <content type="html">$500 Target Gift Card Free Shipping! Use &lt;b&gt;BING&lt;/b&gt; CASHBACK: US $505.00 End Date: Sunday Jul-04-2010 19:51:55 PDTBuy &lt;a href=&quot;http://url4.eu/54MqU&quot;&gt;http://url4.eu/54MqU&lt;/a&gt;</content>
+    <updated>2010-06-28T09:09:40Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1008606664/IMAGE76_normal.jpg" rel="image"/>
+    <google:location>OH</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://rss2twitter.com/&quot; rel=&quot;nofollow&quot;&gt;RSS2Twitter&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>GiftCards4Sale_ (Gift Cards)</name>
+      <uri>http://twitter.com/GiftCards4Sale_</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17238261710</id>
+    <published>2010-06-28T08:55:39Z</published>
+    <link type="text/html" href="http://twitter.com/GiftCards4Sale_/statuses/17238261710" rel="alternate"/>
+    <title>$500 Target Gift Card Free Shipping! Use BING CASHBACK: US $505.00 End Date: Sunday Jul-04-2010 19:51:55 PDTBuy http://url4.eu/54LBR</title>
+    <content type="html">$500 Target Gift Card Free Shipping! Use &lt;b&gt;BING&lt;/b&gt; CASHBACK: US $505.00 End Date: Sunday Jul-04-2010 19:51:55 PDTBuy &lt;a href=&quot;http://url4.eu/54LBR&quot;&gt;http://url4.eu/54LBR&lt;/a&gt;</content>
+    <updated>2010-06-28T08:55:39Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1008606664/IMAGE76_normal.jpg" rel="image"/>
+    <google:location>OH</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://rss2twitter.com/&quot; rel=&quot;nofollow&quot;&gt;RSS2Twitter&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>GiftCards4Sale_ (Gift Cards)</name>
+      <uri>http://twitter.com/GiftCards4Sale_</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17237016343</id>
+    <published>2010-06-28T08:23:49Z</published>
+    <link type="text/html" href="http://twitter.com/myrssbuddy/statuses/17237016343" rel="alternate"/>
+    <title>Caption contest: Bing bus goes searching for search results - Bus. Ice cream truck. Personal space invader. Vessel o... http://ow.ly/17UBi1</title>
+    <content type="html">Caption contest: &lt;b&gt;Bing&lt;/b&gt; bus goes searching for search results - Bus. Ice cream truck. Personal space invader. Vessel o... &lt;a href=&quot;http://ow.ly/17UBi1&quot;&gt;http://ow.ly/17UBi1&lt;/a&gt;</content>
+    <updated>2010-06-28T08:23:49Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/379029726/RSS_person_normal.jpg" rel="image"/>
+    <google:location>Philadelphia, PA</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>myrssbuddy (RSS Feed)</name>
+      <uri>http://twitter.com/myrssbuddy</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17236649869</id>
+    <published>2010-06-28T08:14:47Z</published>
+    <link type="text/html" href="http://twitter.com/PhillyCodeHound/statuses/17236649869" rel="alternate"/>
+    <title>Caption contest: Bing bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invader. Vessel... http://bit.ly/akfLEh</title>
+    <content type="html">Caption contest: &lt;b&gt;Bing&lt;/b&gt; bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invader. Vessel... &lt;a href=&quot;http://bit.ly/akfLEh&quot;&gt;http://bit.ly/akfLEh&lt;/a&gt;</content>
+    <updated>2010-06-28T08:14:47Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/769558701/SETH-SIMPSONIZED_normal.jpg" rel="image"/>
+    <google:location>Philadelphia, PA</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>PhillyCodeHound (PhillyCodeHound)</name>
+      <uri>http://twitter.com/PhillyCodeHound</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17236634998</id>
+    <published>2010-06-28T08:14:25Z</published>
+    <link type="text/html" href="http://twitter.com/mickeywmoore/statuses/17236634998" rel="alternate"/>
+    <title>RT: @engadget Caption contest: Bing bus goes searching for search results http://bit.ly/9Dr8me</title>
+    <content type="html">RT: &lt;a href=&quot;http://twitter.com/engadget&quot;&gt;@engadget&lt;/a&gt; Caption contest: &lt;b&gt;Bing&lt;/b&gt; bus goes searching for search results &lt;a href=&quot;http://bit.ly/9Dr8me&quot;&gt;http://bit.ly/9Dr8me&lt;/a&gt;</content>
+    <updated>2010-06-28T08:14:25Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/1008988381/Snapshot_of_me_1_normal.png" rel="image"/>
+    <google:location>Toronto, Ontario, Canada</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>mickeywmoore (Mickey W Moore)</name>
+      <uri>http://twitter.com/mickeywmoore</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17236596927</id>
+    <published>2010-06-28T08:13:26Z</published>
+    <link type="text/html" href="http://twitter.com/Dogs_Breakfast/statuses/17236596927" rel="alternate"/>
+    <title>Engadget: Caption contest: Bing bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invad... http://bit.ly/d6EmVb</title>
+    <content type="html">Engadget: Caption contest: &lt;b&gt;Bing&lt;/b&gt; bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invad... &lt;a href=&quot;http://bit.ly/d6EmVb&quot;&gt;http://bit.ly/d6EmVb&lt;/a&gt;</content>
+    <updated>2010-06-28T08:13:26Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/77401397/barkfastsquares-logo_normal.png" rel="image"/>
+    <google:location>Dogtown</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>Dogs_Breakfast (Dog's Breakfast)</name>
+      <uri>http://twitter.com/Dogs_Breakfast</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17236281430</id>
+    <published>2010-06-28T08:05:26Z</published>
+    <link type="text/html" href="http://twitter.com/phoneindex/statuses/17236281430" rel="alternate"/>
+    <title>Caption contest: Bing bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invader. Ves.. http://bit.ly/9WtgeC</title>
+    <content type="html">Caption contest: &lt;b&gt;Bing&lt;/b&gt; bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invader. Ves.. &lt;a href=&quot;http://bit.ly/9WtgeC&quot;&gt;http://bit.ly/9WtgeC&lt;/a&gt;</content>
+    <updated>2010-06-28T08:05:26Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/686380515/cici_small_normal.jpg" rel="image"/>
+    <google:location>canada, ontario, windsor</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>phoneindex (ciprian moloci)</name>
+      <uri>http://twitter.com/phoneindex</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17236280185</id>
+    <published>2010-06-28T08:05:24Z</published>
+    <link type="text/html" href="http://twitter.com/mobilebloger/statuses/17236280185" rel="alternate"/>
+    <title>Caption contest: Bing bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invader. Ves.. http://bit.ly/9WtgeC</title>
+    <content type="html">Caption contest: &lt;b&gt;Bing&lt;/b&gt; bus goes searching for search results: 
+Bus. Ice cream truck. Personal space invader. Ves.. &lt;a href=&quot;http://bit.ly/9WtgeC&quot;&gt;http://bit.ly/9WtgeC&lt;/a&gt;</content>
+    <updated>2010-06-28T08:05:24Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/679618159/cici_small_normal.jpg" rel="image"/>
+    <google:location>Windsor, Canada</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>mobilebloger (ciprian)</name>
+      <uri>http://twitter.com/mobilebloger</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17236125861</id>
+    <published>2010-06-28T08:01:31Z</published>
+    <link type="text/html" href="http://twitter.com/SeanKyleBordner/statuses/17236125861" rel="alternate"/>
+    <title>Technology notebook - Everett Herald: Microsoft's Bing search site is getting an entertainment section with click-... http://bit.ly/9UJENS</title>
+    <content type="html">Technology notebook - Everett Herald: Microsoft&amp;apos;s &lt;b&gt;Bing&lt;/b&gt; search site is getting an entertainment section with click-... &lt;a href=&quot;http://bit.ly/9UJENS&quot;&gt;http://bit.ly/9UJENS&lt;/a&gt;</content>
+    <updated>2010-06-28T08:01:31Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/537990918/sean_profile_normal.jpg" rel="image"/>
+    <google:location>Washington, DC</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>SeanKyleBordner (Sean Bordner)</name>
+      <uri>http://twitter.com/SeanKyleBordner</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17234267628</id>
+    <published>2010-06-28T07:15:01Z</published>
+    <link type="text/html" href="http://twitter.com/LadyNightowl/statuses/17234267628" rel="alternate"/>
+    <title>Bada Bing! P-Woww's hair is lookin' good and staying in place! http://bit.ly/bJk5Ek</title>
+    <content type="html">Bada &lt;b&gt;Bing&lt;/b&gt;! P-Woww&amp;apos;s hair is lookin&amp;apos; good and staying in place! &lt;a href=&quot;http://bit.ly/bJk5Ek&quot;&gt;http://bit.ly/bJk5Ek&lt;/a&gt;</content>
+    <updated>2010-06-28T07:15:01Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/970503338/trytry_normal.JPG" rel="image"/>
+    <google:location>New York State</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.viewpoints.com&quot; rel=&quot;nofollow&quot;&gt;Signin.viewpoints.com&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>LadyNightowl (Patty Therre)</name>
+      <uri>http://twitter.com/LadyNightowl</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17234179483</id>
+    <published>2010-06-28T07:12:49Z</published>
+    <link type="text/html" href="http://twitter.com/GiftCards4Sale_/statuses/17234179483" rel="alternate"/>
+    <title>$500 WalMart Gift Card + Bonus Rebates - Bing is Back!: US $519.99 End Date: Wednesday Jun-30-2010 17:57:03 http://url4.eu/549Pn</title>
+    <content type="html">$500 WalMart Gift Card + Bonus Rebates - &lt;b&gt;Bing&lt;/b&gt; is Back!: US $519.99 End Date: Wednesday Jun-30-2010 17:57:03 &lt;a href=&quot;http://url4.eu/549Pn&quot;&gt;http://url4.eu/549Pn&lt;/a&gt;</content>
+    <updated>2010-06-28T07:12:49Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1008606664/IMAGE76_normal.jpg" rel="image"/>
+    <google:location>OH</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://rss2twitter.com/&quot; rel=&quot;nofollow&quot;&gt;RSS2Twitter&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>GiftCards4Sale_ (Gift Cards)</name>
+      <uri>http://twitter.com/GiftCards4Sale_</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17230494938</id>
+    <published>2010-06-28T05:48:15Z</published>
+    <link type="text/html" href="http://twitter.com/Bugz41/statuses/17230494938" rel="alternate"/>
+    <title>Dis jail show brings back memories. I never wanna go back 2 da bing. nd I thank god nd my big brotha andy everyday! 25 to life is no joke</title>
+    <content type="html">Dis jail show brings back memories. I never wanna go back 2 da &lt;b&gt;bing&lt;/b&gt;. nd I thank god nd my big brotha andy everyday! 25 to life is no joke</content>
+    <updated>2010-06-28T05:48:15Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/1004403738/image_normal.jpg" rel="image"/>
+    <google:location>Cleveland, Ohio</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Mobile Web&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>Bugz41 (Michael Maharidge)</name>
+      <uri>http://twitter.com/Bugz41</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17229327445</id>
+    <published>2010-06-28T05:24:08Z</published>
+    <link type="text/html" href="http://twitter.com/WilliamFlorn/statuses/17229327445" rel="alternate"/>
+    <title>bing cashback ebay tracker #bing #cashback #ebay #tracker   http://www.linkati.com/bing-cashback-ebay-tracker.htm</title>
+    <content type="html">&lt;b&gt;bing&lt;/b&gt; cashback ebay tracker &lt;a href=&quot;http://search.twitter.com/search?q=%23bing&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#bing');&quot;&gt;#&lt;b&gt;bing&lt;/b&gt;&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23cashback&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#cashback');&quot;&gt;#cashback&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23ebay&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#ebay');&quot;&gt;#ebay&lt;/a&gt; &lt;a href=&quot;http://search.twitter.com/search?q=%23tracker&quot; onclick=&quot;pageTracker._setCustomVar(2, 'result_type', 'recent', 3);pageTracker._trackPageview('/intra/hashtag/#tracker');&quot;&gt;#tracker&lt;/a&gt;   &lt;a href=&quot;http://www.linkati.com/bing-cashback-ebay-tracker.htm&quot;&gt;http://www.linkati.com/&lt;b&gt;bing&lt;/b&gt;-cashback-ebay-tracker.htm&lt;/a&gt;</content>
+    <updated>2010-06-28T05:24:08Z</updated>
+    <link type="image/png" href="http://s.twimg.com/a/1277506381/images/default_profile_2_normal.png" rel="image"/>
+    <google:location>Washington DC, US</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://apiwiki.twitter.com/&quot; rel=&quot;nofollow&quot;&gt;API&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>WilliamFlorn (William)</name>
+      <uri>http://twitter.com/WilliamFlorn</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:17227775188</id>
+    <published>2010-06-28T04:54:08Z</published>
+    <link type="text/html" href="http://twitter.com/SeanKyleBordner/statuses/17227775188" rel="alternate"/>
+    <title>Bing to add TV, music to site - Tulsa World: BELLEVUE, Wash. (AP) &#8212; Microsoft's Bing search site is getting an ent... http://bit.ly/d4niPK</title>
+    <content type="html">&lt;b&gt;Bing&lt;/b&gt; to add TV, music to site - Tulsa World: BELLEVUE, Wash. (AP) &#8212; Microsoft&amp;apos;s &lt;b&gt;Bing&lt;/b&gt; search site is getting an ent... &lt;a href=&quot;http://bit.ly/d4niPK&quot;&gt;http://bit.ly/d4niPK&lt;/a&gt;</content>
+    <updated>2010-06-28T04:54:08Z</updated>
+    <link type="image/png" href="http://a1.twimg.com/profile_images/537990918/sean_profile_normal.jpg" rel="image"/>
+    <google:location>Washington, DC</google:location>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://twitterfeed.com&quot; rel=&quot;nofollow&quot;&gt;twitterfeed&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>SeanKyleBordner (Sean Bordner)</name>
+      <uri>http://twitter.com/SeanKyleBordner</uri>
+    </author>
+  </entry>
+</feed>
