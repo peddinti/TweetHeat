@@ -25,7 +25,7 @@ namespace TweetHeatFinal
     using System.Xml.Linq;
     using System.Xml.XPath;    
     using System.ServiceModel;
-    using System.Collections.Generic;    
+    using System.Collections.Generic;
     
 
     /// <summary>
@@ -265,15 +265,15 @@ namespace TweetHeatFinal
         /// <param name="response">Twitter Xml response</param>
         private void ParseTwitterXml(string response)
         {
-            string nameSpace = "http://www.w3.org/2005/Atom";                        
-            XDocument doc = XDocument.Parse(response);
-            XPathNavigator nav = doc.CreateNavigator();
+            string nameSpace = "http://www.w3.org/2005/Atom";            
+            XDocument doc = XDocument.Parse(response);            
+            XPathNavigator nav = doc.CreateNavigator();            
             nav.MoveToRoot(); nav.MoveToFirstChild();
-            XPathNodeIterator iterator = nav.SelectChildren("entry", nameSpace);            
+            XPathNodeIterator iterator = nav.SelectChildren("entry", nameSpace);           
             foreach (XPathNavigator n in iterator)
             {
                 // Adding all tweets to queue;
-                tweetsQueue.Enqueue(GetTwitterTweet(n));                
+                tweetsQueue.Enqueue(GetTwitterTweet(n,nameSpace));                
             }
             TweetCount = tweetsQueue.Count;
         }
@@ -283,20 +283,73 @@ namespace TweetHeatFinal
         /// </summary>
         /// <param name="nav">navigation object of the result xml</param>
         /// <returns>Twitter Tweet Object</returns>
-        private static Definition.TwitterTweet GetTwitterTweet(XPathNavigator nav)
+        private static Definition.TwitterTweet GetTwitterTweet(XPathNavigator nav,string nameSpace)
         {
+            //System.Xml.XmlNamespaceManager manager = new System.Xml.XmlNamespaceManager(nav.NameTable);
             Definition.TwitterTweet tweet = new Definition.TwitterTweet();
-            nav.MoveToFirstChild(); tweet.id = nav.Value;
-            nav.MoveToNext(); tweet.published = nav.Value;
-            nav.MoveToNext(); tweet.link = nav.GetAttribute("href", String.Empty);
-            nav.MoveToNext(); tweet.title = nav.Value;
-            nav.MoveToNext(); tweet.content = nav.Value;
-            nav.MoveToNext(); tweet.updated = nav.Value;
-            nav.MoveToNext(); tweet.imageLink = nav.GetAttribute("href", String.Empty);
-            nav.MoveToNext(); tweet.location = nav.Value;
-            nav.MoveToNext(); nav.MoveToNext(); nav.MoveToNext(); nav.MoveToNext(); nav.MoveToNext();
-            nav.MoveToFirstChild(); tweet.authorName = nav.Value;
-            nav.MoveToNext(); tweet.authorUrl = nav.Value;
+            XPathNodeIterator iterator = nav.SelectChildren(XPathNodeType.Element);            
+            foreach (XPathNavigator n in iterator)
+            {
+                switch (n.LocalName)
+                {
+                    case "id":
+                        tweet.id = n.Value;
+                        break;
+                    case "published":
+                        tweet.published = n.Value;
+                        break;
+                    case "link":
+                        if(n.GetAttribute("type","") == "text/html")
+                        {
+                            tweet.link = n.Value;
+                        }
+                        else
+                        {
+                            tweet.imageLink = n.Value;
+                        }
+                        break;
+                    case "title":
+                        tweet.title = n.Value;
+                        break;
+                    case "content":
+                        tweet.content = n.Value;
+                        break;
+                    case "updated":
+                        tweet.updated = n.Value;
+                        break;
+                    case "geo":
+                        if (n.Value != "")
+                        {
+                            XPathNodeIterator ngeo = n.SelectDescendants(XPathNodeType.Element, false);
+                            ngeo.MoveNext();
+                            tweet.googleLatitude = ngeo.Current.Value.Split(' ')[0];
+                            tweet.googleLongitude = ngeo.Current.Value.Split(' ')[1];                            
+                        }
+                        break;
+                    case "location":
+                        if (n.Value != "")
+                        {
+                            tweet.location = n.Value;
+                        }
+                        break;
+                    case "place":
+                        if (n.Value != "")
+                        {
+                            XPathNodeIterator nplc = n.SelectDescendants(XPathNodeType.Element, false);
+                            nplc.MoveNext(); nplc.MoveNext();
+                            tweet.location = nplc.Current.Value;
+                        }
+                        break;
+                    case "author":
+                        XPathNodeIterator naut = n.SelectDescendants(XPathNodeType.Element,false);
+                        naut.MoveNext();
+                        tweet.authorName = naut.Current.Value;
+                        naut.MoveNext();
+                        tweet.authorUrl = naut.Current.Value;                        
+                        break;
+                }
+                
+            }            
             return tweet;
         }        
 
@@ -305,9 +358,10 @@ namespace TweetHeatFinal
         /// If the feed already contains the latitude and longitude information. No query is made.
         /// </summary>
         /// <param name="queryLocation">The location for which Geo codes are computed</param>
-        private void MakeGeoCodingRequest(string queryLocation)
+        private void MakeGeoCodingRequest(Definition.TwitterTweet Geotweet)
         {
-            if (!queryLocation.Contains("T: "))
+            // if latitude and longitude values are not available then use geocoding
+            if (Geotweet.googleLatitude == "" || Geotweet.googleLongitude == "" || Geotweet.googleLatitude == null || Geotweet.googleLongitude == null)
             {
                 EndpointAddress endPointOfService = new EndpointAddress(new Uri(this.CredentialsGrantingService.GeocodeEndpoint));
                 BasicHttpBinding httpBinding = new BasicHttpBinding()
@@ -321,7 +375,7 @@ namespace TweetHeatFinal
 
                 GeocodeRequest request = new GeocodeRequest();
                 request.Culture = "en-US";
-                request.Query = queryLocation;
+                request.Query = Geotweet.location;
                 #region Create Confidence filters - Commented out
                 //ConfidenceFilter filter =  new ConfidenceFilter;
                 //filter.MinimumConfidence = Confidence.High;
@@ -343,14 +397,13 @@ namespace TweetHeatFinal
             {
                 // contains inherent Coordinates - No need to call API
                 Definition.TwitterTweet tweet = tweetsQueue.Dequeue();
-                tweet.googleLongitude = queryLocation.Split(',')[1];
-                tweet.googleLatitude = queryLocation.Split(',')[0].Substring(queryLocation.IndexOf(':') + 2);
+                // the values are already present in the latitude and longitude coordinates
                 DrawPoint(tweet);
                 if (tweetsQueue.Count > 0)
                 {
                     // Get Geo for next tweet
                     tweet = tweetsQueue.Peek();
-                    MakeGeoCodingRequest(tweet.location);
+                    MakeGeoCodingRequest(tweet);
                 }
                 else
                 {
@@ -371,8 +424,8 @@ namespace TweetHeatFinal
             //updateLayers();
             if (tweetsQueue.Count > 0)
             {
-                Definition.TwitterTweet tweet = tweetsQueue.Peek();
-                MakeGeoCodingRequest(tweet.location);
+                Definition.TwitterTweet tweet = tweetsQueue.Peek();                
+                MakeGeoCodingRequest(tweet);
             }            
         }
 
@@ -468,7 +521,7 @@ namespace TweetHeatFinal
             if (tweetsQueue.Count == 0)
                 return;
             Definition.TwitterTweet tweet = tweetsQueue.Dequeue();
-            if (response.Results.Count > 0)
+            if (response.Results != null && response.Results.Count > 0)
             {
                 tweet.googleLatitude = response.Results[0].Locations[0].Latitude + "";
                 tweet.googleLongitude = response.Results[0].Locations[0].Longitude + "";
@@ -484,7 +537,7 @@ namespace TweetHeatFinal
             {
                 // Start Api request again
                 tweet = tweetsQueue.Peek();
-                MakeGeoCodingRequest(tweet.location);
+                MakeGeoCodingRequest(tweet);
             }
             else
             {
