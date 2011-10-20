@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.Maps.Extended</name>
+	</assembly>
+	<members>
+		<member name="T:Microsoft.Maps.Core.GetNearestStreetsideLocationCompleted">
+			<summary>Contains the result returned when a call to the <see cref="M:Microsoft.Maps.Core.StreetsideContract.GetNearestStreetsideLocation(Microsoft.Maps.MapControl.Location,System.Action{Microsoft.Maps.Core.GetNearestStreetsideLocationCompleted})"></see> method completes.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.GetNearestStreetsideLocationCompleted.Result">
+			<summary>When overridden in a derived class, gets the nearest location to the requested location that has available StreetsideTM imagery. If no nearby location is found, this value is null.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.StreetsideLocation"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.MapVector3D">
+			<summary>Represents a three dimensional vector.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapVector3D.#ctor(System.Double,System.Double,System.Double)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.MapVector3D"></see> class.</summary>
+			<param name="z">The value of the Z vector.</param>
+			<param name="x">The value of the X vector.</param>
+			<param name="y">The value of the Y vector.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapVector3D.X">
+			<summary>Gets the value of the X vector.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapVector3D.Y">
+			<summary>Gets the value of the Y vector.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapVector3D.Z">
+			<summary>Gets the value of the Z vector.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.StreetsideCamera">
+			<summary>Represents the view orientation in a StreetsideTM map. The camera is positioned in WGS84 space.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.StreetsideCamera.Changed">
+			<summary>When overridden in a derived class, occurs when any parameter of the camera is changed including field of view (zoom), look at, look up, or position. Note that this event is fired every frame during transitions.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.StreetsideCamera.Stopped">
+			<summary>When overridden in a derived class, occurs when the camera stops moving after a transition or after a jump to a new location.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.StreetsideCamera.SetLookAt(Microsoft.Maps.Core.MapVector3D,Microsoft.Maps.Core.MapVector3D)">
+			<summary>When overridden in a derived class, sets the “look at” and “look up” parameters for the camera in WGS84 space, which makes <see cref="M:Microsoft.Maps.Core.StreetsideContract.SetCameraOrientation(System.Double,System.Double,System.Double,System.Boolean)"></see> easier to use.</summary>
+			<param name="lookUp">The “look up” unit vector of the camera.</param>
+			<param name="lookAt">The “look at” unit vector of the camera.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideCamera.FarPlaneDistance">
+			<summary>When overridden in a derived class, gets the far plane distance of the camera in meters.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideCamera.HorizontalFieldOfView">
+			<summary>When overridden in a derived class, gets the horizontal field of view of the camera in radians.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideCamera.LookAt">
+			<summary>When overridden in a derived class, gets the “look at” unit vector of the camera.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.MapVector3D"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideCamera.LookUp">
+			<summary>When overridden in a derived class, gets the “look up” unit vector of the camera.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.MapVector3D"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideCamera.NearPlaneDistance">
+			<summary>When overridden in a derived class, gets the near plane distance of the camera in meters.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideCamera.Position">
+			<summary>When overridden in a derived class, gets the position of the camera.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.MapVector3D"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideCamera.VerticalFieldOfView">
+			<summary>When overridden in a derived class, gets the vertical field of view of the camera in radians.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideCamera.Zoom">
+			<summary>When overridden in a derived class, gets the camera zoom, where 0 is zoomed out all the way and 1 is zoomed in all the way.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.StreetsideContract">
+			<summary>Provides the ability to interact with a StreetsideTM map.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.StreetsideContract.ActivateStreetside(Microsoft.Maps.Core.StreetsideLocation,System.Boolean,System.Action)">
+			<summary>When overridden in a derived class, activates the StreetsideTM map mode if it is not already the active map mode and optionally performs an animated transition from the current map mode.</summary>
+			<param name="completed">The action to take when the Streetside map is active and ready to use.</param>
+			<param name="animate">A bool indicating whether to animate the transition to the Streetside map. If this value is false, the map snaps to a Streetside map.</param>
+			<param name="location">The location to transition to.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.StreetsideContract.ActivateStreetside(Microsoft.Maps.Core.StreetsideLocation,System.Boolean,System.Double,System.Action)">
+			<summary>When overridden in a derived class, activates the StreetsideTM map mode if it is not already the active map mode and optionally performs an animated transition from the current map mode.</summary>
+			<param name="completed">The action to take when the Streetside map is active and ready to use.</param>
+			<param name="animate">A bool indicating whether to animate the transition to the Streetside map. If this value is false, the map snaps to a Streetside map.</param>
+			<param name="location">The location to transition to.</param>
+			<param name="targetHeading">The heading in degrees to animate to, where 0 is north, 90 is east, 180 is south, and 270 is west.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.StreetsideContract.GetNearestStreetsideLocation(Microsoft.Maps.MapControl.Location,System.Action{Microsoft.Maps.Core.GetNearestStreetsideLocationCompleted})">
+			<summary>When overridden in a derived class, retrieves the closest location with available StreetsideTM imagery.</summary>
+			<param name="completed">The action to take if Streetside imagery is found at the specified location.</param>
+			<param name="location">The location to check for Streetside imagery.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.StreetsideContract.MoveToLocation(Microsoft.Maps.Core.StreetsideLocation,System.Double,System.Double,System.Double,System.Boolean,System.Action)">
+			<summary>When overridden in a derived class, moves the StreetsideTM camera to the given location and optionally animates the move. This method throws an exception if Streetside is not the active map mode.</summary>
+			<param name="cameraZoom">The camera zoom level, where 0 is zoomed out all the way and 1 is zoomed in all the way.</param>
+			<param name="pitch">The pitch in degrees. Positive values look upwards and negative values look down.</param>
+			<param name="heading">The heading in degrees, where 0 is north, 90 is east, 180 is south, and 270 is west.</param>
+			<param name="completed">The action to take when the location move is completed or interrupted.</param>
+			<param name="animate">A bool indicating whether to animate the transition to the Streetside map. If this value is false, the map snaps to a Streetside map.</param>
+			<param name="newCameraCenter">The location to move the camera to.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.StreetsideContract.MoveToLocationWithViewpoint(Microsoft.Maps.Core.StreetsideLocation,Microsoft.Maps.MapControl.Location,System.Boolean,System.Action)">
+			<summary>When overridden in a derived class, moves the StreetsideTM camera to the given location while keeping the location in view. This method throws an exception if Streetside is not the active map mode.</summary>
+			<param name="zoomOutDuringMove">A bool indicating whether to zoom the camera out during the move.</param>
+			<param name="completed">The action to take when the move is completed or interrupted.</param>
+			<param name="viewpoint">The location to keep in view while moving. Locations with <see cref="T:Microsoft.Maps.MapControl.AltitudeReference"></see> of Ellipsoid in WGS84 space will be most accurate. Ground and Surface will both use an altitude relative to the new camera center and using SeaLevel will throw an exception.</param>
+			<param name="newCameraCenter">The location to move the camera to.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.StreetsideContract.SetCameraOrientation(System.Double,System.Double,System.Double,System.Boolean)">
+			<summary>When overridden in a derived class, sets the camera orientation either by animating to the new orientation or by snapping to the new orientation. This method throws and exception if StreetsideTM is not the active map mode.</summary>
+			<param name="cameraZoom">The camera zoom level, where 0 is zoomed out all the way and 1 is zoomed in all the way.</param>
+			<param name="pitch">The pitch in degrees. Positive values look upwards and negative values look down.</param>
+			<param name="animate">A bool indicating whether to animate the camera move. If this value is false, the camera snaps to the new orientation.</param>
+			<param name="heading">The heading in degrees, where 0 is north, 90 is east, 180 is south, and 270 is west.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideContract.Camera">
+			<summary>When overridden in a derived class, gets the camera object for StreetsideTM. An exception is thrown if a get is attempted when Streetside is not the active map mode, but the event handlers may still be used.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.StreetsideCamera"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.StreetsideContract.CursorVisible">
+			<summary>When overridden in a derived class, gets or sets the visibility of the cursor. Mouse events must be handled separately to disable clicking and dragging.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.StreetsideLocation">
+			<summary>Represents a location in a StreetsideTM map that a camera can be moved to. This class should not be directly instantiated but should be created using the <see cref="M:Microsoft.Maps.Core.StreetsideContract.GetNearestStreetsideLocation(Microsoft.Maps.MapControl.Location,System.Action{Microsoft.Maps.Core.GetNearestStreetsideLocationCompleted})"></see> method.</summary>
+		</member>
+	</members>
+</doc>

@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.Maps.Plugins</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.Maps.Network">
+			<summary>The Microsoft.Maps.Network namespace contains types that allow you to manage network requests.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Network.HttpStack">
+			<summary>Represents which HTTP stack to use.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Network.HttpStack.Browser">
+			<summary>Use the web browser HTTP stack. This is the default value.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Network.HttpStack.Client">
+			<summary>Use client HTTP stack. This may provide fewer interruptions for network intensive programs but may also have subtle differences from the browser HTTP stack.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Network.NetworkManagerContract">
+			<summary>Provides the ability to make web service requests.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Network.NetworkManagerContract.Idle">
+			<summary>When overridden in a derived class, occurs when the network queue is idle. The event occurs before network requests with <see cref="T:Microsoft.Maps.Network.NetworkPriority"></see> setting of Idle are started.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Network.NetworkManagerContract.CreatePrioritizedHttpTransportBindingElement">
+			<summary>When overridden in a derived class, creates a <see cref="T:Microsoft.Maps.Network.PrioritizedHttpTransportBindingElement"></see> suitable for use with WCF classes.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Network.PrioritizedHttpTransportBindingElement"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.Network.NetworkManagerContract.CreatePrioritizedWebClient">
+			<summary>When overridden in a derived class, creates a <see cref="T:Microsoft.Maps.Network.PrioritizedWebClient"></see> that allows the priority of emitted web requests to be adjusted.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Network.PrioritizedWebClient"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Network.NetworkPriority">
+			<summary>Represents the priority of a network request relative to other network requests.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Network.NetworkPriority.High">
+			<summary>The network request is high priority.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Network.NetworkPriority.Idle">
+			<summary>The network request will not be started until the network has been idle for a quarter of a second.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Network.NetworkPriority.Low">
+			<summary>The network request is low priority.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Network.NetworkPriority.Normal">
+			<summary>The network request is normal priority.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Network.PrioritizedDownloadImageCompletedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadImageCompleted"></see> event.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedDownloadImageCompletedEventArgs.Result">
+			<summary>Gets the downloaded image.</summary>
+			<returns>Returns <see cref="T:System.Windows.Media.Imaging.BitmapSource"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Network.PrioritizedDownloadStringCompletedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadStringCompleted"></see> event.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedDownloadStringCompletedEventArgs.Result">
+			<summary>Gets the downloaded data as a string.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Network.PrioritizedHttpTransportBindingElement">
+			<summary>Represents an HttpTransportBindingElement replacement capable of emitting prioritized network requests.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedHttpTransportBindingElement.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Network.PrioritizedHttpTransportBindingElement"></see> class.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedHttpTransportBindingElement.HttpStack">
+			<summary>When overridden in a derived class, gets or sets the HTTP stack to use when making requests.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Network.HttpStack"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedHttpTransportBindingElement.Priority">
+			<summary>When overridden in a derived class, gets or sets the priority of network requests emitted by this transport.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Network.NetworkPriority"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Network.PrioritizedOpenReadCompletedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.OpenReadCompleted"></see> event.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedOpenReadCompletedEventArgs.Result">
+			<summary>Gets the stream that was opened and read.</summary>
+			<returns>Returns <see cref="T:System.IO.Stream"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Network.PrioritizedUploadStringCompletedEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.UploadStringCompleted"></see> event.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedUploadStringCompletedEventArgs.Result">
+			<summary>Gets the uploaded data as a string.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Network.PrioritizedWebClient">
+			<summary>Contains a web client capable of downloading and uploading data and images, opening and reading streams. and prioritizing network requests.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Network.PrioritizedWebClient"></see> class.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadImageCompleted">
+			<summary>Occurs when an image download completes.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadStringCompleted">
+			<summary>Occurs when a data download completes.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Network.PrioritizedWebClient.OpenReadCompleted">
+			<summary>Occurs when a stream open and read completes.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Network.PrioritizedWebClient.UploadStringCompleted">
+			<summary>Occurs when a data upload completes.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.CancelAsync">
+			<summary>When overridden in a derived class, cancels an asynchronous request.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.DownloadImageAsync(System.Uri)">
+			<summary>Begins downloading the specified image. The <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadImageCompleted"></see> event is fired when the download completes.</summary>
+			<param name="address">The URI of the image to download.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.DownloadImageAsync(System.Uri,System.Object)">
+			<summary>When overridden in a derived class, begins downloading the specified image. The <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadImageCompleted"></see> event is fired when the download completes.</summary>
+			<param name="address">The URI of the image to download.</param>
+			<param name="userToken">A user token.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.DownloadStringAsync(System.Uri)">
+			<summary>Begins downloading data from the specified URL. The <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadStringCompleted"></see> event is fired when the download completes.</summary>
+			<param name="address">The URL to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.DownloadStringAsync(System.Uri,System.Object)">
+			<summary>When overridden in a derived class, begins downloading data from the specified URL. The <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadStringCompleted"></see> event is fired when the download completes.</summary>
+			<param name="address">The URL to use.</param>
+			<param name="userToken">A user token.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.OnDownloadImageCompleted(Microsoft.Maps.Network.PrioritizedDownloadImageCompletedEventArgs)">
+			<summary>When overridden in a derived class, raises the <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadImageCompleted"></see> event.</summary>
+			<param name="e">The event arguments.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.OnDownloadStringCompleted(Microsoft.Maps.Network.PrioritizedDownloadStringCompletedEventArgs)">
+			<summary>When overridden in a derived class, raises the <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.DownloadStringCompleted"></see> event.</summary>
+			<param name="e">The event arguments.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.OnOpenReadCompleted(Microsoft.Maps.Network.PrioritizedOpenReadCompletedEventArgs)">
+			<summary>When overridden in a derived class, raises the <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.OpenReadCompleted"></see> event.</summary>
+			<param name="e">The event arguments.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.OnUploadStringCompleted(Microsoft.Maps.Network.PrioritizedUploadStringCompletedEventArgs)">
+			<summary>When overridden in a derived class, raises the <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.UploadStringCompleted"></see> event.</summary>
+			<param name="e">The event arguments.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.OpenReadAsync(System.Uri)">
+			<summary>Opens a stream and begins reading the stream. The <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.OpenReadCompleted"></see> event is thrown when the stream read completes.</summary>
+			<param name="address">The URL of the stream to open and read.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.OpenReadAsync(System.Uri,System.Object)">
+			<summary>Opens a stream and begins reading the stream. The <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.OpenReadCompleted"></see> event is thrown when the stream read completes.</summary>
+			<param name="address">The URL of the stream to open and read.</param>
+			<param name="userToken">A user token.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.UploadStringAsync(System.Uri,System.String)">
+			<summary>Begins uploading data using the POST method. The <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.UploadStringCompleted"></see> event is fired when the upload completes.</summary>
+			<param name="address">The URL of the upload location.</param>
+			<param name="data">The data to upload.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.UploadStringAsync(System.Uri,System.String,System.String)">
+			<summary>Begins uploading data using the specified method. The <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.UploadStringCompleted"></see> event is fired when the upload completes.</summary>
+			<param name="address">The URL of the upload location.</param>
+			<param name="method">The method to use to upload the data.</param>
+			<param name="data">The data to upload.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Network.PrioritizedWebClient.UploadStringAsync(System.Uri,System.String,System.String,System.Object)">
+			<summary>Begins uploading data using the specified method. The <see cref="E:Microsoft.Maps.Network.PrioritizedWebClient.UploadStringCompleted"></see> event is fired when the upload completes.</summary>
+			<param name="userToken">A user token.</param>
+			<param name="address">The URL of the upload location.</param>
+			<param name="method">The method to use to upload the data.</param>
+			<param name="data">The data to upload.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedWebClient.Encoding">
+			<summary>When overridden in a derived clas, gets or sets the encoding type to use to encode and decode text.</summary>
+			<returns>Returns <see cref="T:System.Text.Encoding"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedWebClient.Headers">
+			<summary>When overridden in a derived class, gets or sets the headers for web requests emitted by this client.</summary>
+			<returns>Returns <see cref="T:System.Net.WebHeaderCollection"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedWebClient.HttpStack">
+			<summary>When overridden in a derived class, gets or sets the HTTP stack to use when making requests. This property is not applicable when using <see cref="M:Microsoft.Maps.Network.PrioritizedWebClient.DownloadImageAsync(System.Uri)"></see>.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Network.HttpStack"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Network.PrioritizedWebClient.Priority">
+			<summary>Gets or sets the priority of requests emitted by this client.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Network.NetworkPriority"></see>.</returns>
+		</member>
+		<member name="N:Microsoft.Maps.Plugins">
+			<summary>The Microsoft.Maps.Plugins namespace contains types used to develop plug-ins, which are discrete pieces of functionality that can use and be used by other plug-ins.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.Cardinality">
+			<summary>Specifies constants that define how many times an import or export contract instance can appear.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Plugins.Cardinality.Multiple">
+			<summary>A multiple import allows multiple instances of a contract.A multiple export offers multiple instances of a contract.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Plugins.Cardinality.Single">
+			<summary>A single import requires that the contract instance be present exactly once across all plug-ins on the Bing Maps site.A single export indicates that the contract instance is offered exactly once by this plugin. Another instance might also be offered by another plugin, if they are both satisfying an import multiple.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.ConfigurationContract">
+			<summary>Provides the ability to retrieve configuration settings for a plug-in.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ConfigurationContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.ConfigurationContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ConfigurationContract.GetDictionary(Microsoft.Maps.Plugins.PluginToken)">
+			<summary>When overridden in a derived class, retrieves the configuration settings for the plug-in identified by the specified token.</summary>
+			<returns>Returns <see cref="T:System.Collections.Generic.IDictionary`2"></see>.</returns>
+			<param name="token">The token that identifies the plug-in for which to retrieve settings.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.ContentContract">
+			<summary>Contains the UI representation of a plug-in. This class is reserved for internal use.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ContentContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.ContentContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ContentContract.CreateContent">
+			<summary>When overridden in a derived class, generates content that represents the UI of the plug-in.</summary>
+			<returns>Returns <see cref="T:System.Windows.UIElement"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Plugins.ContentContract.Content">
+			<summary>Gets the UIElement that represents the content of the plug-in’s UI.</summary>
+			<returns>Returns <see cref="T:System.Windows.UIElement"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.ExportAttribute">
+			<summary>Contains the attribute that identifies a property of the plug-in to export. This class is reserved for internal use.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ExportAttribute.#ctor(System.String,Microsoft.Maps.Plugins.Cardinality)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.ExportAttribute"></see> class with the specified contract name and cardinality.</summary>
+			<param name="contract">The name of the contract to export.</param>
+			<param name="cardinality">The cardinality of the export.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Plugins.ExportAttribute.Cardinality">
+			<summary>Gets the cardinality of the export.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Plugins.Cardinality"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Plugins.ExportAttribute.Contract">
+			<summary>Gets the name of the contract to export.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Plugins.ExportAttribute.DefaultExporter">
+			<summary>This property is reserved for internal use.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.ExportMultipleAttribute">
+			<summary>Contains the attribute that identifies a property of a plug-in that exports multiple objects with the specified contract name. This class inherits from the <see cref="T:Microsoft.Maps.Plugins.ExportAttribute"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ExportMultipleAttribute.#ctor(System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.ExportMultipleAttribute"></see> class.</summary>
+			<param name="contract">The name of the contract to export.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.ExportSingleAttribute">
+			<summary>Contains the attribute that identifies a property of a plug-in that exports a single object with the specified contract name. This class inherits from the <see cref="T:Microsoft.Maps.Plugins.ExportAttribute"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ExportSingleAttribute.#ctor(System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.ExportSingleAttribute"></see> class.</summary>
+			<param name="contract">The name of the contract to export.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.ImportAttribute">
+			<summary>Contains the attribute that identifies a property imported into a plug-in. This class is reserved for internal use.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ImportAttribute.#ctor(System.String,Microsoft.Maps.Plugins.Cardinality)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.ImportAttribute"></see> class.</summary>
+			<param name="contract">The name of the contract to import.</param>
+			<param name="cardinality">The cardinality of the import.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Plugins.ImportAttribute.Cardinality">
+			<summary>Gets the cardinality of the import.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Plugins.Cardinality"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Plugins.ImportAttribute.Contract">
+			<summary>Gets the name of the contract being imported.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.ImportLoadPolicy">
+			<summary>Specifies the initialization policy of the import.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Plugins.ImportLoadPolicy.AsynchronousOnDemand">
+			<summary>The import does not automatically load after plug-in initialization, but must be manually loaded after initialization completes.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Plugins.ImportLoadPolicy.AsynchronousOnNetworkIdle">
+			<summary>The loading of the import is independent of the plug-in initialization.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Plugins.ImportLoadPolicy.Synchronous">
+			<summary>The import must be loaded before the plug-in is initialized.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.ImportMultipleAttribute">
+			<summary>Contains the attribute that identifies the property that imports multiple objects into the plug-in. This class inherits from the <see cref="T:Microsoft.Maps.Plugins.ImportAttribute"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ImportMultipleAttribute.#ctor(System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.ImportMultipleAttribute"></see> class.</summary>
+			<param name="contract">The name of the contract to import.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.ImportSingleAttribute">
+			<summary>Contains the attribute that identifies the property that imports a single object into the plug-in. This class inherits from the <see cref="T:Microsoft.Maps.Plugins.ImportAttribute"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ImportSingleAttribute.#ctor(System.String,Microsoft.Maps.Plugins.ImportLoadPolicy)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.ImportSingleAttribute"></see> class.</summary>
+			<param name="contract">The name of the contract to import.</param>
+			<param name="loadPolicy">The load policy of the import.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.ImportSingleAttribute.#ctor(System.String,Microsoft.Maps.Plugins.ImportLoadPolicy,System.Boolean)">
+			<summary>This constructor is reserved for future use.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Plugins.ImportSingleAttribute.AllowZeroExports">
+			<summary>This property is reserved for future use.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Plugins.ImportSingleAttribute.LoadPolicy">
+			<summary>Gets the import load policy.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Plugins.ImportLoadPolicy"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.Plugin">
+			<summary>Represents a discrete piece of functionality. Plug-in functionality can be consumed by other plug-ins (import) or provided to other plug-ins (export) using contracts.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.Plugin.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.Plugin"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.Plugin.Activate(System.Collections.Generic.IDictionary{System.String,System.String})">
+			<summary>When overridden in a derived class, launches the plug-in with the specified parameters.</summary>
+			<param name="activationParameters">The parameters to use when the plug-in is launched.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.Plugin.Initialize">
+			<summary>When overridden in a derived class, the plug-in and its imports are initialized.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Plugins.Plugin.Token">
+			<summary>Gets the token that uniquely identifies the plug-in.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Plugins.PluginToken"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.PluginHelperContract">
+			<summary>Provides plug-in helper methods.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.PluginHelperContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Plugins.PluginHelperContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.PluginHelperContract.GetActivationParameters(Microsoft.Maps.Plugins.PluginToken)">
+			<summary>When overridden in a derived class, retrieves the activation parameters for a single map app associated with a given plug-in token.</summary>
+			<returns>Returns <see cref="T:System.Collections.Generic.IDictionary`2"></see>.</returns>
+			<param name="pluginToken">The token that identifies the plug-in associated with the map app.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.PluginHelperContract.GetActivationParameters(Microsoft.Maps.Plugins.PluginToken,System.Int32)">
+			<summary>When overridden in a derived class, retrieves the activation parameters for a single map app associated with a given plug-in token.</summary>
+			<returns>Returns <see cref="T:System.Collections.Generic.IDictionary`2"></see>.</returns>
+			<param name="pluginToken">The token that identifies the plug-in associated with the map app.</param>
+			<param name="appId">The ID that identifies the map app.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.PluginHelperContract.GetAssociatedAppIds(Microsoft.Maps.Plugins.PluginToken)">
+			<summary>When overridden in a derived class, returns a collection of map app IDs associated with the given plug-in token.</summary>
+			<returns>Returns <see cref="T:System.Collections.ObjectModel.Collection`1"></see>.</returns>
+			<param name="pluginToken">The token that identifies the plug-in.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Plugins.PluginHelperContract.LoadContractForAsyncImport(System.String,System.Action{System.Boolean})">
+			<summary>When overridden in a derived class, requests that the specified contract be loaded.</summary>
+			<param name="contractName">The name of the contract to load.</param>
+			<param name="onLoadCompleted">A delegate to invoke once the import is complete. The delegate takes a bool indicating whether the contract was successfully loaded. This may be called synchronously or asynchronously.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Plugins.PluginToken">
+			<summary>Contains a token generated at runtime that uniquely identifies a plug-in.</summary>
+		</member>
+	</members>
+</doc>

@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.Maps.MapControl.Types</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.Maps.MapControl">
+			<summary>The Microsoft.Maps.MapControl namespace contains the most commonly used public classes of the map control.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.AltitudeReference">
+			<summary>Represents the starting plane of the altitude measurement.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.AltitudeReference.Ellipsoid">
+			<summary>The altitude is measured from the ellipsoid.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.AltitudeReference.Ground">
+			<summary>The altitude is measured from the ground.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.AltitudeReference.SeaLevel">
+			<summary>The altitude is measured from sea level.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.AltitudeReference.Surface">
+			<summary>The altitude is measured from the surface.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.Location">
+			<summary>Contains the altitude and coordinate values of a point on the map.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.Location"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.#ctor(Microsoft.Maps.MapControl.Location)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.Location"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.#ctor(System.Double,System.Double)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.Location"></see> class using the specified latitude and longitude values</summary>
+			<param name="latitude">The latitude value of the location.</param>
+			<param name="longitude">The longitude value of the location.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.#ctor(System.Double,System.Double,System.Double)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.Location"></see> class using the specified latitude, longitude, and altitude values</summary>
+			<param name="latitude">The latitude value of the location.</param>
+			<param name="altitude">The altitude of the location.</param>
+			<param name="longitude">The longitude value of the location.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.#ctor(System.Double,System.Double,System.Double,Microsoft.Maps.MapControl.AltitudeReference)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.Location"></see> structure using the given latitude, longitude, altitude, and altitude reference values.</summary>
+			<param name="latitude">The latitude value of the location.</param>
+			<param name="altitudeReference">The reference plane used to measure the altitude.</param>
+			<param name="altitude">The altitude of the location.</param>
+			<param name="longitude">The longitude value of the location.</param>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.Location.MaxLatitude">
+			<summary>Specifies the maximum latitude in degrees.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.Location.MaxLongitude">
+			<summary>Specifies the maximum longitude in degrees.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.Location.MinLatitude">
+			<summary>Specifies the minimum latitude in degrees.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.Location.MinLongitude">
+			<summary>Specifies the minimum longitude in degrees.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.Equals(System.Object)">
+			<summary>Returns whether or not the specified object is equal to the location.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="obj">The object to compare to.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.GetHashCode">
+			<summary>Returns the hash code for the location.</summary>
+			<returns>Returns <see cref="T:System.Int32"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.NormalizeLongitude(System.Double)">
+			<summary>Converts the specified invalid longitude value to a valid value (within the valid range -180 to 180).</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+			<param name="longitude">The longitude value to normalize.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.op_Equality(Microsoft.Maps.MapControl.Location,Microsoft.Maps.MapControl.Location)">
+			<summary>Determines whether or not two instances of <see cref="T:Microsoft.Maps.MapControl.Location"></see> are equal.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="location2">The second location to compare.</param>
+			<param name="location1">The first location to compare.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.op_Inequality(Microsoft.Maps.MapControl.Location,Microsoft.Maps.MapControl.Location)">
+			<summary>Determines whether or not two instances of <see cref="T:Microsoft.Maps.MapControl.Location"></see> are not equal.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="location2">The second location to compare.</param>
+			<param name="location1">The first location to compare.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.ToString">
+			<summary>Converts the location to a formatted string containing the latitude, longitude, and altitude values.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Location.ToString(System.IFormatProvider)">
+			<summary>Converts the location to a formatted string containing the latitude, longitude, and altitude values.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.Location.Altitude">
+			<summary>Gets or sets the altitude of the location.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.Location.AltitudeReference">
+			<summary>Gets or sets the reference plane used to measure the altitude.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.AltitudeReference"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.Location.Latitude">
+			<summary>Gets or sets the latitude of the location.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.Location.Longitude">
+			<summary>Gets or sets the longitude of the location.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.LocationCollection">
+			<summary>Contains a collection of location items.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationCollection.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.LocationCollection"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationCollection.Add(Microsoft.Maps.MapControl.Location)">
+			<summary>Adds the specified location to the collection.</summary>
+			<param name="loc">The location to add to the collection.</param>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.LocationRect">
+			<summary>Represents a rectangle on the map.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.#ctor(System.Collections.Generic.IList{Microsoft.Maps.MapControl.Location})">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see> class using the specified collection of locations.</summary>
+			<param name="locations">A location collection containing the corners of the rectangle.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.#ctor(Microsoft.Maps.MapControl.LocationRect)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see> class.</summary>
+			<param name="rect">The location rectangle to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.#ctor(Microsoft.Maps.MapControl.Location,Microsoft.Maps.MapControl.Location)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see> class using the specified northwest and southeast corners of the rectangle..</summary>
+			<param name="corner1">The location of the northwest corner of the rectangle.</param>
+			<param name="corner2">The location of the southeast corner of the rectangle.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.#ctor(Microsoft.Maps.MapControl.Location,System.Double,System.Double)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see> class centered on the specified location.</summary>
+			<param name="width">The width of the rectangle.</param>
+			<param name="height">The height of the rectangle.</param>
+			<param name="center">The location of the center of the rectangle.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.#ctor(System.Double,System.Double,System.Double,System.Double)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see> class using the specified borders.</summary>
+			<param name="east">The longitude of the eastern border of the rectangle.</param>
+			<param name="west">The longitude of the western border of the rectangle.</param>
+			<param name="south">The latitude of the southern border of the rectangle.</param>
+			<param name="north">The latitude of the northern border of the rectangle.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.Equals(Microsoft.Maps.MapControl.LocationRect)">
+			<summary>Determines whether this location rectangle is equal to the specified location rectangle.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="value">The location rectangle to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.Equals(System.Object)">
+			<summary>Determines whether this location rectangle is equal to the specified object.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="obj">The object to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.GetHashCode">
+			<summary>Retrieves the hash code for this location rectangle.</summary>
+			<returns>Returns <see cref="T:System.Int32"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.Intersection(Microsoft.Maps.MapControl.LocationRect)">
+			<summary>Retrieves the intersection rectangle of this location rectangle and the specified location rectangle.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+			<param name="rect">The location rectangle to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.Intersects(Microsoft.Maps.MapControl.LocationRect)">
+			<summary>Determines whether this location rectangle intersects with the specified location rectangle.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="rect">The location rectangle to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.op_Equality(Microsoft.Maps.MapControl.LocationRect,Microsoft.Maps.MapControl.LocationRect)">
+			<summary>Determines whether two location rectangle instances are equal.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="rect2">The second location rectangle to compare.</param>
+			<param name="rect1">The first location rectangle to compare.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.op_Inequality(Microsoft.Maps.MapControl.LocationRect,Microsoft.Maps.MapControl.LocationRect)">
+			<summary>Determines whether two location rectangle instances are not equal.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="rect2">The second location rectangle to compare.</param>
+			<param name="rect1">The first location rectangle to compare.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.ToString">
+			<summary>Converts the location rectangle to a formatted string containing the latitude, longitude, and altitude values of its corners.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.LocationRect.ToString(System.IFormatProvider)">
+			<summary>Converts the location rectangle to a formatted string containing the latitude, longitude, and altitude values of its corners using a given format provider.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+			<param name="provider">An IFormatProvider implementation that supplies culture-specific formatting information.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.Center">
+			<summary>Gets the location of the center of the rectangle.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.East">
+			<summary>Gets or sets the longitude of the eastern border of the rectangle.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.Height">
+			<summary>Gets the height of the rectangle.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.North">
+			<summary>Gets or sets the latitude of the northern border of the rectangle.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.Northeast">
+			<summary>Gets or sets the location of the northeast corner of the rectangle.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.Northwest">
+			<summary>Gets the location of the northwest corner of the rectangle.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.South">
+			<summary>Gets or sets the latitude of the southern border of the rectangle.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.Southeast">
+			<summary>Gets the location of the southeast corner of the rectangle.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.Southwest">
+			<summary>Gets or sets the location of the southwest corner of the rectangle.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.West">
+			<summary>Gets or sets the longitude of the western border of the rectangle.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.LocationRect.Width">
+			<summary>Gets the width of the rectangle.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapEventArgs">
+			<summary>Provides data for <see cref="T:Microsoft.Maps.MapControl.Map"></see> events.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapEventArgs.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapEventArgs"></see> class.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapEventArgs.Handled">
+			<summary>Gets or sets whether the map event is handled.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapKeyHeldEventArgs">
+			<summary>Provides data for the KeyHeld event.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapKeyHeldEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.Windows.Input.Key},System.Collections.ObjectModel.ReadOnlyCollection{System.Int32})">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapKeyHeldEventArgs"></see> class.</summary>
+			<param name="keysHeld">The keyboard keys that are held down.</param>
+			<param name="platformKeyCodesHeld">The platform key codes held.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapKeyHeldEventArgs.KeysHeld">
+			<summary>Gets the keyboard keys that are held down.</summary>
+			<returns>Returns <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapKeyHeldEventArgs.PlatformKeyCodesHeld">
+			<summary>Gets the platform key codes held.</summary>
+			<returns>Returns <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapKeyPressEventArgs">
+			<summary>Provides data for the KeyPress event.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapKeyPressEventArgs.#ctor(System.Windows.Input.Key,System.Int32)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapKeyPressEventArgs"></see> class.</summary>
+			<param name="platformKeyCode">The platform key code of the key.</param>
+			<param name="keyPressed">The keyboard key that was pressed.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapKeyPressEventArgs.KeyPressed">
+			<summary>Gets the keyboard key that was pressed.</summary>
+			<returns>Returns <see cref="T:System.Windows.Input.Key"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapKeyPressEventArgs.PlatformKeyCode">
+			<summary>Gets the platform key code of the pressed keyboard key.</summary>
+			<returns>Returns <see cref="T:System.Int32"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapMouseDragEventArgs">
+			<summary>Provides data for the MouseDragBox event.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapMouseDragEventArgs.#ctor(System.Windows.Point,System.Windows.Point)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapMouseDragEventArgs"></see> class.</summary>
+			<param name="viewportPoint">The viewport point where the mouse drag ended.</param>
+			<param name="fromViewportPoint">The viewport point where the mouse drag began.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapMouseDragEventArgs.#ctor(System.Windows.Point,System.Windows.Point,System.Boolean)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapMouseDragEventArgs"></see> class.</summary>
+			<param name="viewportPoint">The viewport point where the mouse drag ended.</param>
+			<param name="fromViewportPoint">The viewport point where the mouse drag began.</param>
+			<param name="isInertial">A bool indicating if the inertia animation effect is used when the mouse drag ends.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapMouseDragEventArgs.FromViewportPoint">
+			<summary>Gets the viewport point where the mouse drag began.</summary>
+			<returns>Returns <see cref="T:System.Windows.Point"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapMouseDragEventArgs.IsInertial">
+			<summary>Gets or sets whether an inertia animation effect is used when the mouse drag ends.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapMouseEventArgs">
+			<summary>Provides data for the MouseClick, MouseDoubleClick and MousePan events.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapMouseEventArgs.#ctor(System.Windows.Point)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapMouseEventArgs"></see> class.</summary>
+			<param name="viewportPoint">The viewport point where the mouse event occurred.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapMouseEventArgs.ViewportPoint">
+			<summary>Gets the viewport point where the mouse event occurred.</summary>
+			<returns>Returns <see cref="T:System.Windows.Point"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapMouseWheelEventArgs">
+			<summary>Provides data for the MouseWheel event.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapMouseWheelEventArgs.#ctor(System.Windows.Point,System.Double)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapMouseWheelEventArgs"></see> class.</summary>
+			<param name="viewportPoint">The viewport point where the mouse wheel event began.</param>
+			<param name="wheelDelta">The change in position of the mouse wheel.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapMouseWheelEventArgs.WheelDelta">
+			<summary>Gets the change in position of the mouse wheel.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapTouchDragEventArgs">
+			<summary>Provides data for the events fired for the <see cref="E:Microsoft.Maps.MapControl.Core.MapCore.TouchPan"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapTouchDragEventArgs.#ctor(System.Windows.Point,System.Windows.Point)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapTouchDragEventArgs"></see> class.</summary>
+			<param name="viewportPoint">The viewport point where the touch drag stopped.</param>
+			<param name="fromViewportPoint">The viewport point where the touch drag started.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapTouchDragEventArgs.#ctor(System.Windows.Point,System.Windows.Point,System.Boolean)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapTouchDragEventArgs"></see> class.</summary>
+			<param name="viewportPoint">The viewport point where the touch drag started.</param>
+			<param name="fromViewportPoint">The viewport point where the touch drag stopped.</param>
+			<param name="isInertial">A bool indicating whether to use an inertia animation effect when the touch drag stops.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapTouchDragEventArgs.FromViewportPoint">
+			<summary>Gets the viewport point where the touch drag started.</summary>
+			<returns>Returns <see cref="T:System.Windows.Point"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapTouchDragEventArgs.IsInertial">
+			<summary>Gets a bool indicating whether an inertia animation effect is used when the touch drag stops.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapTouchEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.MapControl.Core.MapCore.TouchComplete"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapTouchEventArgs.#ctor(System.Windows.Point)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapTouchEventArgs"></see> class.</summary>
+			<param name="viewportPoint">The viewport point where the screen was touched.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapTouchEventArgs.ViewportPoint">
+			<summary>Gets the viewport point where the screen was touched.</summary>
+			<returns>Returns <see cref="T:System.Windows.Point"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapTouchRotateEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.MapControl.Core.MapCore.TouchRotate"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapTouchRotateEventArgs.#ctor(System.Windows.Point,System.Double)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapTouchRotateEventArgs"></see> class.</summary>
+			<param name="viewportPoint">The viewport point where the screen was touched.</param>
+			<param name="rotateAmount">A double that is the change in heading, in degrees, that defines the rotation.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapTouchRotateEventArgs.RotateDelta">
+			<summary>Gets the change in heading, in degrees, that defines the map rotation.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.MapTouchZoomEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.MapControl.Core.MapBase.TouchZoom"></see> event.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.MapTouchZoomEventArgs.#ctor(System.Windows.Point,System.Double)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.MapTouchZoomEventArgs"></see> class.</summary>
+			<param name="viewportPoint">The viewport point where the screen was touched.</param>
+			<param name="zoomDelta">The change in zoom level.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.MapTouchZoomEventArgs.ZoomDelta">
+			<summary>Gets the change in zoom level.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.PositionOrigin">
+			<summary>Represents the anchor point of the Position property on a UIElement.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.PositionOrigin.#ctor(System.Double,System.Double)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.PositionOrigin"></see> class.</summary>
+			<param name="horizontalOrigin">The position of the origin along the x-axis.</param>
+			<param name="verticalOrigin">The position of the origin along the y-axis.</param>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.PositionOrigin.BottomCenter">
+			<summary>Specifies the bottom center of the position.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.PositionOrigin.BottomLeft">
+			<summary>Specifies the bottom left of the position.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.PositionOrigin.BottomRight">
+			<summary>Specifies the bottom right of the position.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.PositionOrigin.Center">
+			<summary>Specifies the center of the position.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.PositionOrigin.CenterLeft">
+			<summary>Specifies the center left of the position.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.PositionOrigin.CenterRight">
+			<summary>Specifies the center right of the position.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.PositionOrigin.TopCenter">
+			<summary>Specifies the top center of the position.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.PositionOrigin.TopLeft">
+			<summary>Specifies the top left of the position.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.MapControl.PositionOrigin.TopRight">
+			<summary>Specifies the top right of the position.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.PositionOrigin.Equals(System.Object)">
+			<summary>Determines whether the specified object is equal to this position origin.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="obj">The object to compare to.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.PositionOrigin.Equals(Microsoft.Maps.MapControl.PositionOrigin)">
+			<summary>Determines whether the specified position origin is equal to this position origin.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="origin">The position origin to compare to.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.PositionOrigin.GetHashCode">
+			<summary>Retrieves the hash code for this position origin.</summary>
+			<returns>Returns <see cref="T:System.Int32"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.PositionOrigin.op_Equality(Microsoft.Maps.MapControl.PositionOrigin,Microsoft.Maps.MapControl.PositionOrigin)">
+			<summary>Determines whether two position origin objects are equal.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="origin2">The second position origin to compare.</param>
+			<param name="origin1">The first position origin to compare.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.PositionOrigin.op_Inequality(Microsoft.Maps.MapControl.PositionOrigin,Microsoft.Maps.MapControl.PositionOrigin)">
+			<summary>Determines whether two position origin objects are not equal.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="origin2">The second position origin to compare.</param>
+			<param name="origin1">The first position origin to compare.</param>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.PositionOrigin.X">
+			<summary>Gets or sets the x-axis position of the position origin.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.MapControl.PositionOrigin.Y">
+			<summary>Gets or sets the y-axis position of the position origin.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.ShapeBase">
+			<summary>Represents the base shape class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.ShapeBase.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.ShapeBase"></see> class.</summary>
+		</member>
+		<member name="N:Microsoft.Maps.MapControl.Design">
+			<summary>The Microsoft.Maps.MapControl.Design namespace contains classes used by Silverlight design tools, such as type converters.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.Design.LocationCollectionConverter">
+			<summary>Contains methods that parse a string, containing locations, into a <see cref="T:Microsoft.Maps.MapControlDesign.LocationCollection"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.LocationCollectionConverter.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.Design.LocationCollectionConverter"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.LocationCollectionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+			<summary>Determines whether or not the given type can be converted to a <see cref="T:Microsoft.Maps.MapControl.Design.LocationCollection"></see>.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see> indicating whether or not a string can be converted to a <see cref="T:Microsoft.Maps.MapControl.Design.LocationCollection"></see>.</returns>
+			<param name="sourceType">The object type to convert from.</param>
+			<param name="context">The format context provider of the type.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.LocationCollectionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+			<summary>Converts the given object to a <see cref="T:Microsoft.Maps.MapControl.Design.LocationCollection"></see>.</summary>
+			<returns>Returns the converted<see cref="T:System.Object"></see>.</returns>
+			<param name="context">The format context provider of the type.</param>
+			<param name="value">The object to convert.</param>
+			<param name="culture">The culture to use in the conversion.</param>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.Design.LocationConverter">
+			<summary>Contains methods that parse a string into a <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.LocationConverter.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.Design.LocationConverter"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.LocationConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+			<summary>Determines whether or not the given type can be converted to a <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="sourceType">The object type from which to convert.</param>
+			<param name="context">The format context provider of the type.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.LocationConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+			<summary>Converts a given object to a <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</summary>
+			<returns>Returns <see cref="T:System.Object"></see>.</returns>
+			<param name="context">The format context provider of the type.</param>
+			<param name="value">The object to convert.</param>
+			<param name="culture">The culture to use in the conversion.</param>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.Design.LocationRectConverter">
+			<summary>Contains methods that parse a string into a <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.LocationRectConverter.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.Design.LocationRectConverter"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.LocationRectConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+			<summary>Determines whether the given type can be converted to a <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="sourceType">The object type from which to convert.</param>
+			<param name="context">The format context provider of the type.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.LocationRectConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+			<summary>Converts the given object to a <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</summary>
+			<returns>Returns <see cref="T:System.Object"></see>.</returns>
+			<param name="context">The format context provider of the type.</param>
+			<param name="value">The object to convert.</param>
+			<param name="culture">The culture to use in the conversion.</param>
+		</member>
+		<member name="T:Microsoft.Maps.MapControl.Design.PositionOriginConverter">
+			<summary>Contains methods that parse a string into a <see cref="T:Microsoft.Maps.MapControl.PositionOrigin"></see>.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.PositionOriginConverter.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.MapControl.Design.PositionOriginConverter"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.PositionOriginConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+			<summary>Determines whether the specified object can be converted to a <see cref="T:Microsoft.Maps.MapControl.PositionOrigin"></see>.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="sourceType">The type of the object to convert.</param>
+			<param name="context">The context to use in the conversion.</param>
+		</member>
+		<member name="M:Microsoft.Maps.MapControl.Design.PositionOriginConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+			<summary>Converts the specified object to a <see cref="T:Microsoft.Maps.MapControl.PositionOrigin"></see>.</summary>
+			<returns>Returns <see cref="T:System.Object"></see>.</returns>
+			<param name="context">The context to use in the conversion.</param>
+			<param name="value">The object to convert.</param>
+			<param name="culture">The culture to use in the conversion.</param>
+		</member>
+	</members>
+</doc>

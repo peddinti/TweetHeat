@@ -1,0 +1,1363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.Maps.Core</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.Maps.Core">
+			<summary>The Microsoft.Maps.Core namespace contains core classes, most of which allow you to interface with available functionality through the use of contracts.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.Contributor">
+			<summary>Represents the text (usually a verb) that appears in a pop-up.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Contributor.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.Contributor"></see> class.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Contributor.PostInvoke">
+			<summary>Occurs after the user selects this contributor and after Invoke is called.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Contributor.PreInvoke">
+			<summary>Occurs after the user selects this contributor but before Invoke is called.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Contributor.PropertyChanged">
+			<summary>Occurs when a contributor property changes. </summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Contributor.Invoke">
+			<summary>Call this method to invoke the contributor when the contributor link is clicked.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Contributor.InvokeOverride">
+			<summary>Executes the action to invoke when the user selects this contributor.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Contributor.NotifyPropertyChanged(System.String)">
+			<summary>Raises the <see cref="E:Microsoft.Maps.Core.Contributor.PropertyChanged"></see> event with the specified property name.</summary>
+			<param name="propertyName">The name of the property that changed.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Contributor.IsEnabled">
+			<summary>Gets or sets whether the contributor is enabled.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Contributor.Text">
+			<summary>Gets or sets the text to display.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.ContributorFactoryContract">
+			<summary>Contains the contract that allows plug-ins to get verbs whose functionality is provided by other plug-ins.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.ContributorFactoryContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.ContributorFactoryContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.ContributorFactoryContract.CreateContributor(System.Collections.Generic.IDictionary{System.String,System.Object})">
+			<summary>When overridden in a derived class, creates a contributor based on the specified parameters.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.Contributor"></see>.</returns>
+			<param name="parameters">The parameters that define the contributor to create.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Core.ContributorHelperContract">
+			<summary>Provides helper methods for retrieving a contributor from a <see cref="T:Microsoft.Maps.Core.ContributorFactoryContract"></see> that is imported asynchronously.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.ContributorHelperContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.ContributorHelperContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.ContributorHelperContract.CreateAsyncContributor(System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.String)">
+			<summary>When overridden in a derived class, creates the asynchronous contributor.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.Contributor"></see>.</returns>
+			<param name="contributorFactoryContractName">The name of the contributor factory contract.</param>
+			<param name="initialContributorText">The contributor text to display.</param>
+			<param name="parameters">The parameters to use to create the contributor.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.ContributorHelperContract.CreateDemandLoadContributor(System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.String)">
+			<summary>When overridden in a derived class, creates the on-demand contributor.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.Contributor"></see>.</returns>
+			<param name="contributorFactoryContractName">The name of the contributor factory contract.</param>
+			<param name="initialContributorText">The contributor text to display.</param>
+			<param name="parameters">The parameters to use to create the contributor.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Core.CredentialsGrantingContract">
+			<summary>Represents the interface for acquiring credentials to use for service requests.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.CredentialsGrantingContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.CredentialsGrantingContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.CredentialsGrantingContract.CreateCredentials(Microsoft.Maps.Plugins.PluginToken,System.Action{Microsoft.Maps.Core.CredentialsResult})">
+			<summary>When overridden in a derived class, creates a key for immediate one-time use.</summary>
+			<param name="pluginToken">The token that identifies the plug-in that will use the key.</param>
+			<param name="invokeWhenComplete">The action to take when the key is created.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.CredentialsGrantingContract.GeocodeEndpoint">
+			<summary>Gets the web service address to use for geocode requests. </summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.CredentialsGrantingContract.ImageryEndpoint">
+			<summary>Gets the web service address to use for imagery requests. </summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.CredentialsGrantingContract.RouteEndpoint">
+			<summary>Gets the web service address to use for route requests. </summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.CredentialsGrantingContract.SearchEndpoint">
+			<summary>Gets the web service address to use for search requests. </summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.CredentialsRequestStatus">
+			<summary>Contains the status of a request to create a key.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.CredentialsRequestStatus.ServerRequestFailure">
+			<summary>The key was not created because of a server request error.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.CredentialsRequestStatus.Success">
+			<summary>The key was successfully created.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.CredentialsRequestStatus.SystemOffline">
+			<summary>The key was not created because of a lack of network connectivity.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.CredentialsResult">
+			<summary>Contains the credentials used to authenticate service requests.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.CredentialsResult.AuthenticationKey">
+			<summary>Gets the key that can be used to authenticate service requests.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.CredentialsResult.Status">
+			<summary>Gets the status of the key granting request.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.CredentialsRequestStatus"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.DimmedState">
+			<summary>Represents whether a primitive on the map is dimmed.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.DimmedState.Dimmed">
+			<summary>The primitive is dimmed.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.DimmedState.NotDimmed">
+			<summary>The primitive is not dimmed, which is the normal state.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.DistanceUnit">
+			<summary>Represents the unit to use to measure distance.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.DistanceUnit.Kilometers">
+			<summary>Kilometers are used to measure distance.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.DistanceUnit.Miles">
+			<summary>Miles are used to measure distance.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.Entity">
+			<summary>Represents any item displayed on a map.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Entity.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.Entity"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Entity.#ctor(Microsoft.Maps.Core.Primitive)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.Entity"></see> class using the specified primitive.</summary>
+			<param name="primitive">The map primitive to which this entity should be associated.</param>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Entity.PropertyChanged">
+			<summary>Occurs when a property changes.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Entity.NotifyPropertyChanged(System.String)">
+			<summary>Executes when a property changes.</summary>
+			<param name="propertyName">The name of the property that changed.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Entity.RetrieveProperty(System.String,System.Type)">
+			<summary>Retrieves an entity property by name and type.</summary>
+			<returns>Returns <see cref="T:System.Windows.DependencyProperty"></see>.</returns>
+			<param name="type">The type of the property.</param>
+			<param name="name">The name of the property.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Entity.Primitive">
+			<summary>Gets or sets the entity’s associated map primitive.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.Primitive"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.EntityClusteringContract">
+			<summary>Represents the contract that allows entity owners to enable clustering of map entities such as pushpins.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.EntityClusteringContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.EntityClusteringContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.EntityClusteringContract.Register(Microsoft.Maps.Core.Entity)">
+			<summary>When overridden in a derived class, enables clustering for the specified entity.</summary>
+			<param name="entity">The entity to cluster when necessary.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.EntityClusteringContract.Register(System.Collections.Generic.IEnumerable{Microsoft.Maps.Core.Entity})">
+			<summary>When overridden in a derived class, enables clustering for a collection of entities.</summary>
+			<param name="entities">The entities to cluster.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.EntityClusteringContract.Unregister(Microsoft.Maps.Core.Entity)">
+			<summary>When overridden in a derived class, disables clustering for the specified entity.</summary>
+			<param name="entity">The entity to unregister.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.EntityClusteringContract.Unregister(System.Collections.Generic.IEnumerable{Microsoft.Maps.Core.Entity})">
+			<summary>When overridden in a derived class, disables clustering for the specified entities.</summary>
+			<param name="entities">The entities to unregister.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Core.EntryAnimation">
+			<summary>Contains different animation effects for a pushpin when it first appears on the map.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.EntryAnimation.FadeIn">
+			<summary>The pushpin fades in to view.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.EntryAnimation.Grow">
+			<summary>The pushpin grows and bounces when it appears.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.EntryAnimation.NotAnimated">
+			<summary>The pushpin appears with no animation effect.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.GlobalPreferencesContract">
+			<summary>Provides the ability to manage user preferences.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.GlobalPreferencesContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.GlobalPreferencesContract"></see> class.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.GlobalPreferencesContract.PropertyChanged">
+			<summary>Occurs when a property changes.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.GlobalPreferencesContract.GetValue(System.String)">
+			<summary>When overridden in a derived class, gets the value of a preference.</summary>
+			<returns>Returns <see cref="T:System.Object"></see>.</returns>
+			<param name="key">The key that identifies the preference.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.GlobalPreferencesContract.NotifyPropertyChanged(System.String)">
+			<summary>Executes when the specified property changes.</summary>
+			<param name="propertyName">The name of the property that changed.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.GlobalPreferencesContract.SetValue(System.String,System.Object,Microsoft.Maps.Core.PersistMode)">
+			<summary>When overridden in a derived class, sets a preference value.</summary>
+			<param name="key">The key that identifies the preference.</param>
+			<param name="persist">The persist level of the preference.</param>
+			<param name="value">The value of the preference.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.GlobalPreferencesContract.TryGetValue(System.String,System.Object@)">
+			<summary>When overridden in a derived class, attempts to retrieve the value of a preference.</summary>
+			<returns>Returns a <see cref="T:System.Boolean"></see> indicating whether the preference value was successfully retrieved.</returns>
+			<param name="key">The key that identifies the preference.</param>
+			<param name="value">When this method returns, contains the value of the preference. This parameter is passed uninitialized.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Core.HighlightedState">
+			<summary>Represents whether a primitive on the map is highlighted.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.HighlightedState.Highlighted">
+			<summary>The primitive is highlighted.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.HighlightedState.NotHighlighted">
+			<summary>The primitive is not highlighted.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.IsolatedStorageContract">
+			<summary>Provides the ability to save data to and load data from isolated storage.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.IsolatedStorageContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.IsolatedStorageContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.IsolatedStorageContract.GetPluginSpecificIsolatedStorageFile(Microsoft.Maps.Plugins.PluginToken)">
+			<summary>When overridden in a derived class, returns an isolated storage file for a specified plug-in.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PluginIsolatedStorageFile"></see>.</returns>
+			<param name="pluginIdentityToken">A token which identifies the plug-in.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.IsolatedStorageContract.GetPluginSpecificIsolatedStorageSettings(Microsoft.Maps.Plugins.PluginToken)">
+			<summary>When overridden in a derived class, returns isolated storage settings for a specified plug-in.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PluginIsolatedStorageSettings"></see>.</returns>
+			<param name="pluginIdentityToken">A token that identifies the plug-in.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Core.Layer">
+			<summary>Represents a single layer that is managed by the layer manager plug-in. Most map apps contain one or more layers. A layer shows information on a map using map entities (such as points, polylines, and polygons) and may also include a panel which contains information about the layer’s entities as well as other items such as an expandable panel and overlays.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Layer.#ctor(Microsoft.Maps.Plugins.PluginToken)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.Layer"></see> class.</summary>
+			<param name="pluginToken">The token which uniquely identifies the plug-in to which the layer belongs.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Layer.#ctor(Microsoft.Maps.Plugins.PluginToken,System.Int32)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.Layer"></see> class using the specified plug-in token and map app ID.</summary>
+			<param name="pluginToken">The token that identifies the plug-in to which this layer belongs.</param>
+			<param name="appId">The ID of the map app to which this layer belongs.</param>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Layer.PropertyChanged">
+			<summary>Occurs when a property value changes.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Layer.Added">
+			<summary>When overridden in a derived class, notifies the layer that it has been added to the set of active layers.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Layer.BackLinkClicked">
+			<summary>When overridden in a derived class, notifies the layer that it has exited details mode.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Layer.BroughtToFront">
+			<summary>When overridden in a derived class, notifies the layer that it is now at the front of the layer stack.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Layer.NoLongerInFront">
+			<summary>When overridden in a derived class, notifies the layer that it is no longer at the front of the layer stack.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Layer.NotifyPropertyChanged(System.String)">
+			<summary>Raises the <see cref="E:Microsoft.Maps.Core.Layer.PropertyChanged"></see> event with the name of the property that changed.</summary>
+			<param name="propertyName">The name of the property that changed.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Layer.PanelModeChanged(Microsoft.Maps.Core.PanelMode)">
+			<summary>When overridden in a derived class, notifies the layer that the mode of the panel changed to the specified mode.</summary>
+			<param name="newMode">The new panel mode.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Layer.Removed">
+			<summary>When overridden in a derived class, notifies the layer that it has been removed from the set of active layers.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.AppId">
+			<summary>Gets or sets the ID of the map app to which the layer belongs.</summary>
+			<returns>Returns <see cref="T:System.Int32"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.BackLinkText">
+			<summary>Gets or sets the text that displays as a hyperlink used to exit details mode.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.Color">
+			<summary>Gets or sets the color of the layer which is used to render the title of the layer in various places. This color is also applied to any standard pushpins associated with this layer that do not have their color set.</summary>
+			<returns>Returns <see cref="T:System.Nullable`1"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.Entities">
+			<summary>Gets the entities in the layer.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.LayerEntitiesCollection"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.ExpandedPanel">
+			<summary>Gets or sets the content for the layer’s expanded panel, if there is one. The content is displayed when the panel is expanded. Setting this property tells the <see cref="T:Microsoft.Maps.Core.LayerManagerContract"></see> that the layer has expandable content.</summary>
+			<returns>Returns <see cref="T:System.Windows.UIElement"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.IconGenerator">
+			<summary>Gets or sets the function that constructs the icon of the layer, which is displayed next to the layer’s title.</summary>
+			<returns>Returns <see cref="T:System.Func`2"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.IsPersisted">
+			<summary>Gets whether the layer is exempt from layer persistence behavior.</summary>
+			<returns>Returns a <see cref="T:System.Boolean"></see> indicating if the layer will persist. A value of true indicates that the layer will not be removed automatically. A value of false indicates that the layer may be removed automatically.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.LayerMode">
+			<summary>Gets or sets the layer mode. The layer mode affects when the layer is visible to ensure a positive user experience.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.LayerMode"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.MapOverlays">
+			<summary>Gets the list of <see cref="T:Microsoft.Maps.Core.MapOverlay"></see> objects to overlay on the map surface when this layer is active.</summary>
+			<returns>Returns <see cref="T:System.Collections.Generic.IList`1"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.Panel">
+			<summary>Gets or sets the content for this layer’s panel, if there is one.</summary>
+			<returns>Returns <see cref="T:System.Windows.UIElement"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Layer.Title">
+			<summary>Gets or sets the layer’s title.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.LayerIconContext">
+			<summary>Represents the location of a layer icon.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.LayerIconContext.LayerList">
+			<summary>The layer icon is displayed in the list of available layers.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.LayerIconContext.PanelTitle">
+			<summary>The layer icon is displayed on the panel title.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.LayerManagerContract">
+			<summary>Represents the layer manager, which manages layer selection, panel presentation, and map interactions.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.LayerManagerContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.LayerManagerContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.LayerManagerContract.AddLayer(Microsoft.Maps.Core.Layer)">
+			<summary>When overridden in a derived class, adds the specified layer as the top layer to the active set of layers.</summary>
+			<param name="layer">The layer to add.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.LayerManagerContract.AddLayer(Microsoft.Maps.Core.Layer,System.Boolean)">
+			<summary>When overridden in a derived class, adds the specified layer to the active set of layers.</summary>
+			<param name="isActive">A bool indicating whether the added layer should be the top layer.</param>
+			<param name="layer">The layer to add.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.LayerManagerContract.BringToFront(Microsoft.Maps.Core.Layer)">
+			<summary>When overridden in a derived class, brings the specified layer to the top of the active set of layers.</summary>
+			<param name="layer">The layer to bring to the top.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.LayerManagerContract.ContainsLayer(Microsoft.Maps.Core.Layer)">
+			<summary>When overridden in a derived class, determines whether the specified layer is in the set of active layers.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="layer">The layer to check.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.LayerManagerContract.RemoveLayer(Microsoft.Maps.Core.Layer)">
+			<summary>When overridden in a derived class, removes the specified layer from the set of active layers.</summary>
+			<param name="layer">The layer to remove.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.LayerManagerContract.ReplaceLayer(Microsoft.Maps.Core.Layer,Microsoft.Maps.Core.Layer)">
+			<summary>When overridden in a derived class, replaces a specified layer in the set of active layers with another layer.</summary>
+			<param name="oldLayer">The layer in the active set to replace.</param>
+			<param name="layer">The new layer.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.LayerManagerContract.CurrentPanelMode">
+			<summary>When overridden in a derived class, gets or sets the mode of the current panel.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PanelMode"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.LayerMode">
+			<summary>Represents how the layer is used. The layer mode affects how Bing Maps treats the layer when the user adds and removes layers. To ensure a positive user experience, choose the mode that best describes your map app.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.LayerMode.MultipleEntities">
+			<summary>The layer contains a set of entities.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.LayerMode.SingleEntity">
+			<summary>The layer contains a single entity.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.LayerMode.Temporary">
+			<summary>The layer is temporary.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.MapContract">
+			<summary>Represents the contract which provides control over the map view.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.MapContract"></see> class.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.ImageryIdChanged">
+			<summary>When overridden in a derived class, occurs when the type of imagery currently displayed changes.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.KeyDown">
+			<summary>When overridden in a derived class, occurs when a keyboard key is pressed down when the map has focus.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.KeyHeld">
+			<summary>When overridden in a derived class, occurs when a keyboard key is held down.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.KeyPress">
+			<summary>When overridden in a derived class, occurs when a keyboard key is pressed.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.KeyUp">
+			<summary>When overridden in a derived class, occurs when a keyboard key is released when the map has focus.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MouseClick">
+			<summary>When overridden in a derived class, occurs when the mouse is clicked on the map.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MouseDoubleClick">
+			<summary>When overridden in a derived class, occurs when a mouse button is double-clicked.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MouseDragBox">
+			<summary>When overridden in a derived class, occurs when the mouse cursor is dragged across the map.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MouseEnter">
+			<summary>When overridden in a derived class, occurs when the mouse enters the current map view.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MouseLeave">
+			<summary>When overridden in a derived class, occurs when the mouse leaves the current map view.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MouseLeftButtonDown">
+			<summary>When overridden in a derived class, occurs when the left mouse button is pressed.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MouseLeftButtonUp">
+			<summary>When overridden in a derived class, occurs when the left mouse button is released.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MouseMove">
+			<summary>When overridden in a derived class, occurs when the position of the mouse changes over the map.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MousePan">
+			<summary>When overridden in a derived class, occurs when the mouse is used to pan the map.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.MouseWheel">
+			<summary>When overridden in a derived class, occurs when the mouse wheel is used.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.TargetViewChanged">
+			<summary>When overridden in a derived class, occurs when the target view towards which the map is animating changes.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.TargetViewChangedThrottled">
+			<summary>When overridden in a derived class, occurs at throttled intervals when the target view towards which the map is animating is changed.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.ViewChangeEnd">
+			<summary>When overridden in a derived class, occurs when the map view is done changing.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.ViewChangeOnFrame">
+			<summary>When overridden in a derived class, occurs when the map view changes.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.MapContract.ViewChangeStart">
+			<summary>When overridden in a derived class, occurs when the map view starts changing.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapContract.Focus">
+			<summary>When overridden in a derived class, attempts to set focus on the map.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapContract.LocationToViewportPoint(Microsoft.Maps.MapControl.Location)">
+			<summary>When overridden in a derived class, converts a specified location to a viewport point based on the current map mode.</summary>
+			<returns>Returns <see cref="T:System.Windows.Point"></see>.</returns>
+			<param name="location">The location to convert.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapContract.SetMapType(System.String)">
+			<summary>When overridden in a derived class, sets the map type with the specified ID. IDs for standard map types are found in the <see cref="T:Microsoft.Maps.Core.StandardMapTypeIds"></see> class.</summary>
+			<param name="mapTypeId">The ID of the map type.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapContract.SetView(Microsoft.Maps.MapControl.LocationRect)">
+			<summary>When overridden in a derived class, sets the map view to contain the specified bounding rectangle.</summary>
+			<param name="boundingRectangle">The bounding rectangle to use to set the map view.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapContract.SetView(Microsoft.Maps.Core.Entity,System.Double)">
+			<summary>When overridden in a derived class, centers the map view on the specified entity.</summary>
+			<param name="entity">The entity on which to center the map view.</param>
+			<param name="zoomLevel">The zoom level of the map view.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapContract.SetView(Microsoft.Maps.MapControl.Location,System.Double)">
+			<summary>When overridden in a derived class, centers the current map view on the specified location and sets the zoom level.</summary>
+			<param name="zoomLevel">The zoom level to set.</param>
+			<param name="center">The location of the center of the map view.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapContract.SetView(Microsoft.Maps.MapControl.Location,System.Double,System.Double,System.Double)">
+			<summary>When overridden in a derived class, centers the current map view on the specified location and sets the map view zoom level, heading, and pitch.</summary>
+			<param name="pitch">The pitch of the map.</param>
+			<param name="zoomLevel">The zoom level to set.</param>
+			<param name="center">The location of the center of the map view.</param>
+			<param name="heading">The heading to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapContract.ViewportPointToLocation(System.Windows.Point)">
+			<summary>When overridden in a derived class, converts the specified viewport point to a location.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+			<param name="point">The point to convert.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.BoundingRectangle">
+			<summary>When overridden in a derived class, gets the bounding rectangle that defines the current map view.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.Center">
+			<summary>When overridden in a derived class, gets or sets the center location of the current map view.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.Heading">
+			<summary>When overridden in a derived class, gets or sets the heading of the map view.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.ImageryId">
+			<summary>When overridden in a derived class, gets the ID that identifies the currently displayed map imagery.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.MapTypeId">
+			<summary>When overridden in a derived class, gets the ID of the current map type.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.Pitch">
+			<summary>When overridden in a derived class, gets or sets the pitch of the current map view.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.TargetBoundingRectangle">
+			<summary>When overridden in a derived class, gets the bounding rectangle for the view towards which the map is animating.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.TargetCenter">
+			<summary>When overridden in a derived class, gets the location of the center of the view towards which the map is animating.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.TargetHeading">
+			<summary>When overridden in a derived class, gets the heading of the view towards which the map is animating.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.TargetPitch">
+			<summary>When overridden in a derived class, gets the pitch of the view towards which the map is animating.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.TargetZoomLevel">
+			<summary>When overridden in a derived class, gets the zoom level of the view towards which the map is animating.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.ViewportSize">
+			<summary>When overridden in a derived class, gets the size of the current map view.</summary>
+			<returns>Returns <see cref="T:System.Windows.Size"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapContract.ZoomLevel">
+			<summary>When overridden in a derived class, gets or sets the zoom level of the current map view.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.MapOverlay">
+			<summary>Contains the UIElement to overlay on a map surface and associated settings.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapOverlay.#ctor(System.Windows.UIElement)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.MapOverlay"></see> class. This map overlay is not always visible and the default z-index is <see cref="T:Microsoft.Maps.Core.MapZIndex"></see>.MapOverlay.</summary>
+			<param name="element">The UIElement to overlay on the map surface.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapOverlay.#ctor(System.Windows.UIElement,Microsoft.Maps.Core.MapZIndex)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.MapOverlay"></see> class. This map overlay is not always visible.</summary>
+			<param name="zIndex">The z-index of the overlay relative to other map items.</param>
+			<param name="element">The UIElement to overlay on the map surface.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.MapOverlay.#ctor(System.Windows.UIElement,Microsoft.Maps.Core.MapZIndex,System.Boolean)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.MapOverlay"></see> class.</summary>
+			<param name="alwaysVisible">A bool indicating whether the overlay is visible when the owner layer is active.</param>
+			<param name="zIndex">The z-index of the overlay relative to other map items.</param>
+			<param name="element">The UIElement to overlay on the map surface.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapOverlay.AlwaysVisible">
+			<summary>Gets whether the overlay is visible when the owner layer is active.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapOverlay.MapZIndex">
+			<summary>Gets the z-index of the overlay relative to other map items.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.MapZIndex"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.MapOverlay.UIElement">
+			<summary>Gets the UIElement that is rendered on the map surface.</summary>
+			<returns>Returns <see cref="T:System.Windows.UIElement"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.MapZIndex">
+			<summary>Contains the z-order index of items on the map.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.MapZIndex.Map">
+			<summary>The map z-index.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.MapZIndex.MapOverlay">
+			<summary>The z-index for a map overlay.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.MapZIndex.MaxValue">
+			<summary>The highest available z-index. Using MaxValue means the item is on top of every other item.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.MapZIndex.MinValue">
+			<summary>The lowest available z-index. Using MinValue means the item is below every other item.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.MapZIndex.PointPrimitive">
+			<summary>The z-index of a point primitive.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.MapZIndex.PolygonPrimitive">
+			<summary>The z-index of a polygon primitive.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.MapZIndex.PolylinePrimitive">
+			<summary>The z-index of a polyline primitive.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.MapZIndex.Popup">
+			<summary>The z-index of a popup.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.MapZIndex.TilePrimitive">
+			<summary>The z-index of a tile primitive.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.ModalDialogContract">
+			<summary>Provides the ability to display the ve_product_name modal dialog.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.ModalDialogContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.ModalDialogContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.ModalDialogContract.Close">
+			<summary>When overridden in a derived class, closes the ve_product_name modal dialog.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.ModalDialogContract.Open(System.String,System.Object)">
+			<summary>When overridden in a derived class, opens the ve_product_name modal dialog with the specified title and contents.</summary>
+			<returns>Returns a <see cref="T:System.Boolean"></see> indicating whether the modal dialog was successfully opened. If false is returned, the modal dialog may already be open.</returns>
+			<param name="content">The contents of the dialog box.</param>
+			<param name="title">The title of the dialog box.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.ModalDialogContract.Open(System.String,System.Object,System.Action{System.Boolean})">
+			<summary>When overridden in a derived class, opens the ve_product_name modal dialog with the specified title, contents, and close action.</summary>
+			<returns>Returns a <see cref="T:System.Boolean"></see> indicating whether the modal dialog was successfully opened. If false is returned, the modal dialog may already be open.</returns>
+			<param name="content">The contents of the dialog box.</param>
+			<param name="closeCallback">The function to call when the dialog closes.</param>
+			<param name="title">The title of the dialog box.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.ModalDialogContract.IsDialogOpen">
+			<summary>When overridden in a derived class, gets a value indicating whether the ve_product_name modal dialog is currently open.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PanelMode">
+			<summary>Represents the visual modes of a panel.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PanelMode.Collapsed">
+			<summary>The panel is collapsed. No content is shown.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PanelMode.Expanded">
+			<summary>The panel is expanded. Normal and expanded content is shown.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PanelMode.Normal">
+			<summary>The panel is not expanded. Normal content is shown.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PersistMode">
+			<summary>Represents how user preferences are persisted.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PersistMode.CrossSession">
+			<summary>User preferences are persisted across sessions.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PersistMode.Session">
+			<summary>User preferences are only stored for the current session.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PluginIsolatedStorageFile">
+			<summary>Represents an isolated storage area containing plug-in specific files and directories.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.PluginIsolatedStorageFile"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.CreateDirectory(System.String)">
+			<summary>When overridden in a derived class, creates a directory in the isolated storage scope.</summary>
+			<param name="dir">The relative path of the directory to create within the isolated store.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.CreateFile(System.String)">
+			<summary>When overridden in a derived class, creates a file in the isolated store.</summary>
+			<returns>Returns <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream"></see>.</returns>
+			<param name="path">The relative path of the file to create in the isolated store.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.DeleteDirectory(System.String)">
+			<summary>When overridden in a derived class, deletes the specified directory from the isolated store.</summary>
+			<param name="dir">The relative path of the directory to delete within the isolated store.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.DeleteFile(System.String)">
+			<summary>When overridden in a derived class, deletes the specified file from the isolated store.</summary>
+			<param name="file">The relative path of the file to delete within the isolated store.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.DirectoryExists(System.String)">
+			<summary>When overridden in a derived class, returns whether the specified directory exists in the isolated store.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="path">The directory to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.Dispose">
+			<summary>When overridden in a derived class, releases all resources used by the System.IO.IsolatedStorage.IsolatedStorageFile.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.FileExists(System.String)">
+			<summary>When overridden in a derived class, returns whether the specified file exists in the isolated store.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="path">The relative file path and file name to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.GetDirectoryNames">
+			<summary>When overridden in a derived class, retrieves directories in an isolated store.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.GetDirectoryNames(System.String)">
+			<summary>When overridden in a derived class, retrieves directories in an isolated store that match a given search string.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+			<param name="searchPattern">A search string. Both single-character ("?") and multi-character ("*") wildcards are supported.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.GetFileNames">
+			<summary>When overridden in a derived class, obtains the names of files in the root of the isolated store.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.GetFileNames(System.String)">
+			<summary>When overridden in a derived class, obtains the names of files in the root of an isolated store that contain a give search string.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+			<param name="searchPattern">The search string to use. Both single-character ("?") and multi-character ("*") wildcards are supported.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.IncreaseQuotaTo(System.Int64)">
+			<summary>When overridden in a derived class, allows an application to explicitly request a larger quota size.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="newQuotaSize">The new quota size, in bytes.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.OpenFile(System.String,System.IO.FileMode)">
+			<summary>When overridden in a derived class, opens the specified file in the specified mode.</summary>
+			<returns>Returns <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream"></see>.</returns>
+			<param name="path">The relative file path and file name to open.</param>
+			<param name="mode">The file mode to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess)">
+			<summary>When overridden in a derived class, opens the specified file using the specified file mode and file access.</summary>
+			<returns>Returns <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream"></see>.</returns>
+			<param name="access">The file access to use.</param>
+			<param name="path">The relative file path and file name to open.</param>
+			<param name="mode">The file mode to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)">
+			<summary>When overridden in a derived class, opens the specified file using the specified file mode, file access, and file share settings.</summary>
+			<returns>Returns <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream"></see>.</returns>
+			<param name="share">The file share settings to use.</param>
+			<param name="access">The file access to use.</param>
+			<param name="path">The relative file path and file name to open.</param>
+			<param name="mode">The file mode to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageFile.Remove">
+			<summary>When overridden in a derived class, removes the isolated store and all its contents.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PluginIsolatedStorageFile.AvailableFreeSpace">
+			<summary>When overridden in a derived class, gets the amount of free space available in the isolated store.</summary>
+			<returns>Returns <see cref="T:System.Int64"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PluginIsolatedStorageFile.Quota">
+			<summary>When overridden in a derived class, gets the maximum amount of space available for isolated storage.</summary>
+			<returns>Returns <see cref="T:System.Int64"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PluginIsolatedStorageSettings">
+			<summary>Contains key-value pairs in isolated storage, which are the isolated storage settings.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageSettings.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.PluginIsolatedStorageSettings"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageSettings.Add(System.String,System.Object)">
+			<summary>When overridden in a derived class, adds the specified key and corresponding value to the isolated storage settings.</summary>
+			<param name="key">The key to add.</param>
+			<param name="value">The value of the key.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageSettings.CheckNullKey(System.Object)">
+			<summary>Checks for a null key.</summary>
+			<param name="key">The key to check.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageSettings.Clear">
+			<summary>When overridden in a derived class, clears the collection of settings. This method resets the item count to zero and removes all references to elements in the collection.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageSettings.Contains(System.String)">
+			<summary>When overridden in a derived class, determines whether the settings contain the setting identified by the specified key.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="key">The key to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageSettings.Remove(System.String)">
+			<summary>When overridden in a derived class, removes the setting identified by the specified key from the storage settings.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="key">The key to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageSettings.Save">
+			<summary>When overridden in a derived class, saves data written to the current storage settings. Save is a system-wide save of settings and can be called by other plug-ins.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginIsolatedStorageSettings.TryGetValue``1(System.String,``0@)">
+			<summary>When overridden in a derived class, returns the value associated with the specified key.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="key">The key identifying whose value to get.</param>
+			<param name="value">When this method returns, this parameter is set to the value associated with the specified key if the key is found. Otherwise, this parameter is set to the default value for the type of the value parameter. This parameter is passed uninitialized.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PluginIsolatedStorageSettings.Count">
+			<summary>When overridden in a derived class, gets the count of items in the collection of storage settings.</summary>
+			<returns>Returns <see cref="T:System.Int32"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PluginIsolatedStorageSettings.InnerRepresentation">
+			<summary>When overridden in a derived class, returns the inner dictionary.</summary>
+			<returns>Returns <see cref="T:System.Collections.Generic.Dictionary`2"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PluginIsolatedStorageSettings.IsBackedByFile">
+			<summary>When overridden in a derived class, gets a bool indicating if there is a valid settings file.  Isolated storage settings can be in memory and not saved to a file when the isolated storage is disabled or the creation of an empty settings file fails.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PluginIsolatedStorageSettings.Item(System.String)">
+			<summary>When overridden in a derived class, gets or sets the item identified by the given key.</summary>
+			<returns>Returns <see cref="T:System.Object"></see>.</returns>
+			<param name="key">The key of the item to get.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PluginIsolatedStorageSettings.Keys">
+			<summary>When overridden in a derived class, gets the collection of keys.</summary>
+			<returns>Returns <see cref="T:System.Collections.ICollection"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PluginIsolatedStorageSettings.Values">
+			<summary>When overridden in a derived class, gets the settings values.</summary>
+			<returns>Returns <see cref="T:System.Collections.ICollection"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PluginSerializationContract">
+			<summary>Provides the ability for a plug-in to serialize and deserialize itself.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginSerializationContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.PluginSerializationContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginSerializationContract.Deserialize(System.Collections.Generic.Dictionary{System.String,System.String})">
+			<summary>When overridden in a derived class, deserializes a plug-in state.</summary>
+			<param name="state">The state of a plug-in as a dictionary.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PluginSerializationContract.Serialize">
+			<summary>When overridden in a derived class, serializes a plug-in.</summary>
+			<returns>Returns <see cref="T:System.Collections.Generic.Dictionary`2"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PointPrimitive">
+			<summary>Contains the visual representation of a single point on the map.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PointPrimitive.#ctor(Microsoft.Maps.MapControl.Location,System.Func{Microsoft.Maps.Core.Entity,System.Windows.UIElement})">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.PointPrimitive"></see> class.</summary>
+			<param name="renderer">The function that renders the point primitive on the map.</param>
+			<param name="location">The location of the point primitive on the map.</param>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PointPrimitive.ColorProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PointPrimitive.Color"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PointPrimitive.EntryAnimationProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PointPrimitive.EntryAnimation"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PointPrimitive.EntryDelayProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PointPrimitive.EntryDelay"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PointPrimitive.LocationProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PointPrimitive.Location"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PointPrimitive.MapPositionOffsetProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PointPrimitive.MapPositionOffset"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PointPrimitive.MapPositionOriginProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PointPrimitive.MapPositionOrigin"></see> dependency property.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PointPrimitive.GetBoundingBoxCore">
+			<summary>Returns the map bounding box around this point.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PointPrimitive.Color">
+			<summary>Gets or sets the color of the point primitive on the map. If this value is null, the color is the layer’s color.</summary>
+			<returns>Returns <see cref="T:System.Nullable`1"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PointPrimitive.EntryAnimation">
+			<summary>Gets or sets the animation effect to use when the point primitive first appears on the map.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.EntryAnimation"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PointPrimitive.EntryDelay">
+			<summary>Gets or sets the amount of time, in seconds, to delay the appearance of the point primitive on the map. If this value is null, the default entry delay is used.</summary>
+			<returns>Returns <see cref="T:System.Nullable`1"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PointPrimitive.Location">
+			<summary>Gets or sets the map location of the point.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PointPrimitive.MapPositionOffset">
+			<summary>Gets or sets the number of pixels to offset the PointPrimitive after applying <see cref="P:Microsoft.Maps.Core.PointPrimitive.MapPositionOrigin"></see>. The MapPositionOffset is expressed as an X-Y offset measured from the top left corner of the element, where the units are the same as the width and height unit of the UIElement. The top left corner is (0,0), the center of the element is (0.5, 0.5), and the bottom right corner is (1,1).</summary>
+			<returns>Returns <see cref="T:System.Nullable`1"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PointPrimitive.MapPositionOrigin">
+			<summary>Gets or sets the point between (0,0) and (1,1) that describes the position within the PointPrimitive’s UIElement that gets anchored to the Location.</summary>
+			<returns>Returns <see cref="T:System.Nullable`1"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PointPrimitive.Render">
+			<summary>Gets or sets the method that generates the UIElement to represent this primitive on the map.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.Renderer"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PolygonPrimitive">
+			<summary>Represents a polygon on the map.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PolygonPrimitive.#ctor(Microsoft.Maps.MapControl.LocationCollection)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.PolygonPrimitive"></see> class.</summary>
+			<param name="locations">The locations of the vertices of the polygon.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PolygonPrimitive.#ctor(Microsoft.Maps.MapControl.LocationCollection,System.Windows.Media.Brush,System.Windows.Media.Brush)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.PolygonPrimitive"></see> class.</summary>
+			<param name="fill">The brush to use to fill the polygon.</param>
+			<param name="stroke">The brush to use to draw the polygon border.</param>
+			<param name="locations">The locations of the vertices of the polygon.</param>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PolygonPrimitive.FillProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PolygonPrimitive.Fill"></see> dependency property.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PolygonPrimitive.Fill">
+			<summary>Gets or sets the brush to use to fill the polygon.</summary>
+			<returns>Returns <see cref="T:System.Windows.Media.Brush"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PolylinePrimitive">
+			<summary>Represents a polyline on the map.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PolylinePrimitive.#ctor(Microsoft.Maps.MapControl.LocationCollection,System.Windows.Media.Brush)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.PolylinePrimitive"></see> class.</summary>
+			<param name="stroke">The brush to use to draw the polyline.</param>
+			<param name="locations">The locations to use to define the polyline.</param>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PolylinePrimitive.StrokeDashArrayProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PolylinePrimitive.StrokeDashArray"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PolylinePrimitive.StrokeProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PolylinePrimitive.Stroke"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PolylinePrimitive.StrokeThicknessProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.PolylinePrimitive.StrokeThickness"></see> dependency property.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PolylinePrimitive.GetBoundingBoxCore">
+			<summary>Returns a bounding box for the polyline.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PolylinePrimitive.Locations">
+			<summary>Gets the map locations that define the polyline.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationCollection"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PolylinePrimitive.Stroke">
+			<summary>Gets or sets the brush to use to draw the polyline.</summary>
+			<returns>Returns <see cref="T:System.Windows.Media.Brush"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PolylinePrimitive.StrokeDashArray">
+			<summary>Gets or sets a collection of values that indicate the pattern of dashes and gaps used to draw the polyline.</summary>
+			<returns>Returns <see cref="T:System.Windows.Media.DoubleCollection"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PolylinePrimitive.StrokeThickness">
+			<summary>Gets or sets the thickness, in pixels, of the polyline.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PopupContract">
+			<summary>Provides pop-up functionality.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PopupContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.PopupContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PopupContract.Hide">
+			<summary>When overridden in a derived class, hides any currently open popup.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PopupContract.IsRegistered(Microsoft.Maps.Core.Entity)">
+			<summary>When overridden in a derived class, returns whether or not the specified entity is registered to display a pop-up.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+			<param name="entity">The entity to use.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PopupContract.Register(Microsoft.Maps.Core.Entity,System.Action{Microsoft.Maps.Core.PopupStateChangeContext})">
+			<summary>When overridden in a derived class, registers the specified entity for pop-up functionality. The specified handler is called any time the popup is about to open or close or if the popup state otherwise changes.</summary>
+			<param name="entity">The entity to register.</param>
+			<param name="handler">The method to call if the pop-up state changes.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PopupContract.Show(Microsoft.Maps.Core.Entity,Microsoft.Maps.Core.PopupState)">
+			<summary>When overridden in a derived class, displays the pop-up for the specified entity, assuming the entity has been registered.</summary>
+			<param name="entity">The entity to use.</param>
+			<param name="state">The pop-up state to display.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PopupContract.Unregister(Microsoft.Maps.Core.Entity)">
+			<summary>When overridden in a derived class, unregisters the specified entity from the ability to have pop-up functionality.</summary>
+			<param name="entity">The entity to unregister.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PopupState">
+			<summary>Represents the state of a pop-up.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PopupState.Closed">
+			<summary>The pop-up is not visible.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PopupState.Normal">
+			<summary>The pop-up appears for a mouse click and it stays visible.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.PopupState.Preview">
+			<summary>The pop-up appears for a mouse hover and does not persist.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PopupStateChangeContext">
+			<summary>Represents the context of popup that is opening. This context is passed to the <see cref="M:Microsoft.Maps.Core.PopupContract.Register(Microsoft.Maps.Core.Entity,System.Action{Microsoft.Maps.Core.PopupStateChangeContext})"></see> method.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.AllowMapViewChange">
+			<summary>Gets or sets whether the pop-up can change the map view so that it fits into the current view.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.Content">
+			<summary>Gets or sets the content of the pop-up body.</summary>
+			<returns>Returns <see cref="T:System.Object"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.ContentTemplate">
+			<summary>Gets or sets the pop-up body content template.</summary>
+			<returns>Returns <see cref="T:System.Windows.DataTemplate"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.Contributors">
+			<summary>Gets the contributors for this popup.</summary>
+			<returns>Returns <see cref="T:System.Collections.ObjectModel.ObservableCollection`1"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.Element">
+			<summary>Gets the host UIElement of the popup.</summary>
+			<returns>Returns <see cref="T:System.Windows.UIElement"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.Entity">
+			<summary>Gets the entity associated with this pop-up.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.Entity"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.MaxSize">
+			<summary>Gets or sets the maximum size of the pop-up.</summary>
+			<returns>Returns <see cref="T:System.Nullable`1"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.Offset">
+			<summary>Gets or sets the display offset of the pop-up relative to the host UIElement.</summary>
+			<returns>Returns <see cref="T:System.Windows.Point"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.Position">
+			<summary>Gets or sets the location of the pop-up on the map, which will override the default location.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.Location"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.State">
+			<summary>Gets the current pop-up state.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PopupState"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.Title">
+			<summary>Gets or sets the title of the pop-up.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PopupStateChangeContext.TitleClickHandler">
+			<summary>Gets or sets the action to take when the title of the pop-up is clicked.</summary>
+			<returns>Returns <see cref="T:System.Action`1"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.Primitive">
+			<summary>Represents the base class for all primitives on the map. A primitive is any object rendered on the map, such as a pushpin, a shape, or a map layer. </summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Primitive.ElementCreated">
+			<summary>Occurs when a UIElement associated with this primitive is created.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Primitive.ElementRemoved">
+			<summary>Occurs when the UIElement associated with this primitive is removed from the map, but not necessarily discarded.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Primitive.ElementRetired">
+			<summary>Occurs when the UIElement associated with this primitive is being discarded from the system altogether.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Primitive.MouseEnter">
+			<summary>Occurs when the mouse cursor enters the portion of the map occupied by a UIElement associated with the primitive.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Primitive.MouseLeave">
+			<summary>Occurs when the mouse cursor leaves the portion of the map occupied by a UIElement associated with the primitive.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Primitive.MouseLeftButtonDown">
+			<summary>Occurs when the left mouse button is pressed down while the mouse cursor is over the portion of the map occupied by a UIElement associated with the primitive.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Primitive.MouseLeftButtonUp">
+			<summary>Occurs when the left mouse button is released while the mouse cursor is over the portion of the map occupied by a UIElement associated with the primitive.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Primitive.MouseMove">
+			<summary>Occurs when the mouse cursor moves while it is over the portion of the map occupied by a UIElement associated with the primitive.</summary>
+		</member>
+		<member name="E:Microsoft.Maps.Core.Primitive.PropertyChanged">
+			<summary>Occurs when a property of the primitive changes.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.Primitive.DimmedStateProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.Primitive.DimmedState"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.Primitive.HighlightedStateProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.Primitive.HighlightedState"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.Primitive.SelectedStateProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.Primitive.SelectedState"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.Primitive.VisibleStateProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.Primitive.VisibleState"></see> dependency property.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Primitive.GetBoundingBoxCore">
+			<summary>When overridden in a derived class, returns the rectangle that defines the view that contains this primitive.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Primitive.InvalidateRender">
+			<summary>Invalidates the current rendering of the UIElement of this primitive, causing it to be newly rendered as needed for display on the map.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.Primitive.NotifyPropertyChanged(System.String)">
+			<summary>Executes when a primitive property changes.</summary>
+			<param name="propertyName">The name of the property that changed.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Primitive.BoundingBox">
+			<summary>Gets the rectangle that defines the view that contains this primitive.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Primitive.DimmedState">
+			<summary>Gets or sets the dimmed state of the primitive.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.DimmedState"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Primitive.HighlightedState">
+			<summary>Gets or sets the highlighted state of the primitive.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.HighlightedState"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Primitive.MapZIndex">
+			<summary>Gets or sets the z-index of the primitive in relation to other map primitives.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.MapZIndex"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Primitive.SelectedState">
+			<summary>Gets or sets the selected state of the primitive.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.SelectedState"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Primitive.ShouldUpdateBoundingBox">
+			<summary>Gets or sets whether or not the bounding box of the primitive needs to be updated. Deriving classes should set this property to true if some geometry changed that means the bounding box needs to be updated.</summary>
+			<returns>Returns <see cref="T:System.Boolean"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.Primitive.VisibleState">
+			<summary>Gets or sets the visible state of the primitive.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.VisibleState"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PrimitiveElementChangeEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.Core.Primitive.ElementCreated"></see>, <see cref="E:Microsoft.Maps.Core.Primitive.ElementRemoved"></see> and <see cref="E:Microsoft.Maps.Core.Primitive.ElementRetired"></see> events of the <see cref="T:Microsoft.Maps.Core.Primitive"></see> class.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PrimitiveElementChangeEventArgs.Element">
+			<summary>Gets the UIElement, associated with the primitive, which is being created, removed, or retired.</summary>
+			<returns>Returns <see cref="T:System.Windows.UIElement"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PrimitiveElementChangeEventArgs.Entity">
+			<summary>Gets the entity associated with the primitive.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.Entity"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PrimitiveMouseButtonEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.Core.MapContract.MouseLeftButtonDown"></see> and <see cref="E:Microsoft.Maps.Core.MapContract.MouseLeftButtonUp"></see> events.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PrimitiveMouseButtonEventArgs.Element">
+			<summary>Gets the UIElement for the primitive that raised this event.</summary>
+			<returns>Returns <see cref="T:System.Windows.UIElement"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PrimitiveMouseButtonEventArgs.OriginalEventArgs">
+			<summary>Gets the original event arguments raised by the UIElement for the primitive.</summary>
+			<returns>Returns <see cref="T:System.Windows.Input.MouseButtonEventArgs"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PrimitiveMouseEventArgs">
+			<summary>Provides data for the <see cref="E:Microsoft.Maps.Core.MapContract.MouseEnter"></see>, <see cref="E:Microsoft.Maps.Core.MapContract.MouseLeave"></see>, and <see cref="E:Microsoft.Maps.Core.MapContract.MouseMove"></see> events.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PrimitiveMouseEventArgs.Element">
+			<summary>Gets the UIElement for the primitive that raised the event.</summary>
+			<returns>Returns <see cref="T:System.Windows.UIElement"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.PrimitiveMouseEventArgs.OriginalEventArgs">
+			<summary>Gets the original event arguments raised by the UIElement for the primitive.</summary>
+			<returns>Returns <see cref="T:System.Windows.Input.MouseEventArgs"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PushpinFactoryContract">
+			<summary>Provides the ability to generate standard pushpins.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PushpinFactoryContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.PushpinFactoryContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PushpinFactoryContract.CreateMediaPushpin(Microsoft.Maps.MapControl.Location,System.Func{Microsoft.Maps.Core.Entity,System.Windows.UIElement})">
+			<summary>When overridden in a derived class, creates a photo or video pushpin.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PointPrimitive"></see>.</returns>
+			<param name="renderIcon">The function to call to render the video or photo to use for the pushpin icon.</param>
+			<param name="location">The location of the pushpin on the map.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PushpinFactoryContract.CreateMediaPushpin(Microsoft.Maps.MapControl.Location,System.Func{Microsoft.Maps.Core.Entity,System.Windows.UIElement},Microsoft.Maps.Core.PushpinSize)">
+			<summary>When overridden in a derived class, creates a photo or video pushpin.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PointPrimitive"></see>.</returns>
+			<param name="renderIcon">The function to call to render the video or photo to use for the pushpin icon.</param>
+			<param name="location">The location of the pushpin on the map.</param>
+			<param name="size">The size of the pushpin.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PushpinFactoryContract.CreateMiniPushpin(Microsoft.Maps.MapControl.Location)">
+			<summary>When overridden in a derived class, creates a mini pushpin.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PointPrimitive"></see>.</returns>
+			<param name="location">The location of the mini pushpin on the map.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PushpinFactoryContract.CreateStandardPushpin(Microsoft.Maps.MapControl.Location)">
+			<summary>When overridden in a derived class, creates a pushpin at the specified location.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PointPrimitive"></see>.</returns>
+			<param name="location">The location of the pushpin on the map.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PushpinFactoryContract.CreateStandardPushpin(Microsoft.Maps.MapControl.Location,System.Func{Microsoft.Maps.Core.Entity,System.Windows.UIElement})">
+			<summary>When overridden in a derived class, creates a pushpin with the specified  icon at the specified location.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PointPrimitive"></see>.</returns>
+			<param name="renderIcon">The function to call to render the pushpin icon.</param>
+			<param name="location">The location of the pushpin on the map.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.PushpinFactoryContract.CreateStandardPushpin(Microsoft.Maps.MapControl.Location,System.String)">
+			<summary>When overridden in a derived class, creates a pushpin with the specified text at the specified location.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.PointPrimitive"></see>.</returns>
+			<param name="location">The location of the pushpin on the map.</param>
+			<param name="text">The text to display inside the pushpin icon. If the text is longer than three characters, only the first three characters are displayed.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Core.PushpinSize">
+			<summary>This enumeration is reserved for internal use only.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.RectanglePrimitive">
+			<summary>Represents a rectangle on the map. This class inherits from the <see cref="T:Microsoft.Maps.Core.Primitive"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.RectanglePrimitive.#ctor(Microsoft.Maps.MapControl.LocationRect,System.Func{Microsoft.Maps.Core.Entity,System.Windows.UIElement})">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.RectanglePrimitive"></see> class.</summary>
+			<param name="renderer">The method that renders the rectangle on the map.</param>
+			<param name="locationRect">The location rectangle that determines the top left and bottom right points used for positioning the rectangle’s UIElement on the map.</param>
+		</member>
+		<member name="F:Microsoft.Maps.Core.RectanglePrimitive.BottomRightOffsetProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.RectanglePrimitive.BottomRightOffset"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.RectanglePrimitive.LocationRectProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.RectanglePrimitive.LocationRect"></see> dependency property.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.RectanglePrimitive.TopLeftOffsetProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.RectanglePrimitive.TopLeftOffset"></see> dependency property.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.RectanglePrimitive.GetBoundingBoxCore">
+			<summary>Returns the bounding box for this rectangle.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.RectanglePrimitive.BottomRightOffset">
+			<summary>Gets or sets the offset of the bottom right corner of the rectangle.</summary>
+			<returns>Returns <see cref="T:System.Windows.Point"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.RectanglePrimitive.LocationRect">
+			<summary>Gets or sets the location rectangle that determines the top left and bottom right points used for positioning the rectangle’s UIElement on the map.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.RectanglePrimitive.Render">
+			<summary>Gets or sets the method used to render the rectangle.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.Renderer"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.RectanglePrimitive.TopLeftOffset">
+			<summary>Gets or sets the offset of the top left corner of the rectangle.</summary>
+			<returns>Returns <see cref="T:System.Windows.Point"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.SelectedState">
+			<summary>Represents whether a primitive on the map is shown selected.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.SelectedState.NotSelected">
+			<summary>The primitive is not selected.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.SelectedState.Selected">
+			<summary>The primitive is selected.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.SerializationContract`1">
+			<summary>Contains methods that allow serialization and deserialization of generic type objects. Serialization is the process of saving the state of an object so that it can later be returned to that same state through deserialization. Layer serialization is discussed in detail in the Understanding Layer Serialization topic.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.SerializationContract`1.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.SerializationContract`1"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.SerializationContract`1.Deserialize(System.Collections.Generic.Dictionary{System.String,System.String},System.Action{`0})">
+			<summary>Deserializes a specified dictionary and returns a generic type parameter in the specified callback method when the deserialization is complete.</summary>
+			<param name="state">The dictionary to deserialize.</param>
+			<param name="callbackAction">The method to call when the deserialization is complete.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.SerializationContract`1.Serialize(`0)">
+			<summary>Serializes a generic type parameter and returns a dictionary.</summary>
+			<returns>Returns <see cref="T:System.Collections.Generic.Dictionary`2"></see>.</returns>
+			<param name="objectToSerialize">The type parameter to serialize.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Core.StandardImageryIds">
+			<summary>Contains the IDs for standard imagery displayed on the map.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.StandardImageryIds.Aerial">
+			<summary>A map with aerial imagery.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.StandardImageryIds.EnhancedBirdseye">
+			<summary>The imagery displayed is enhanced bird’s eye imagery, which combines bird’s eye imagery and 3D vector data.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.StandardImageryIds.NativeBirdseye">
+			<summary>The imagery displayed is bird’s eye imagery.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.StandardImageryIds.Road">
+			<summary>The imagery displayed is road imagery.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.StandardMapTypeIds">
+			<summary>Contains standard map types, also known as map styles.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.StandardMapTypeIds.Aerial">
+			<summary>The Aerial map style is displayed.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.StandardMapTypeIds.Automatic">
+			<summary>The automatic map type. When this map type is set, a standard map type with the best available imagery for the current location and zoom level is displayed. The map style switches to the best map style as the map is zoomed in or out.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.StandardMapTypeIds.Birdseye">
+			<summary>The bird’s eye map style is displayed. When this map type is set, the map style switches to the best available bird’s eye imagery when the map is zoomed in or out.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.StandardMapTypeIds.Road">
+			<summary>The Road map style is displayed.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.StyleProviderContract">
+			<summary>Provides indirect access to application UI resources.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.StyleProviderContract.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.StyleProviderContract"></see> class.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.StyleProviderContract.GetResource(System.String)">
+			<summary>When overridden in a derived class, returns the UI resource identified by the specified key.</summary>
+			<returns>Returns <see cref="T:System.Object"></see>.</returns>
+			<param name="key">The key that identifies an application UI resource.</param>
+		</member>
+		<member name="T:Microsoft.Maps.Core.TilePrimitive">
+			<summary>Represents a tile source on the map.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.TilePrimitive.#ctor(Microsoft.Maps.Core.TileSourceRetriever,Microsoft.Maps.MapControl.LocationRect)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.TilePrimitive"></see> class.</summary>
+			<param name="tileSourceRetriever">A method that takes an EPSG string and returns a representation of this tile source on the map.</param>
+			<param name="boundingBox">The bounding box that specifies the geographic limits of the data represented by this tile source.</param>
+		</member>
+		<member name="F:Microsoft.Maps.Core.TilePrimitive.OpacityProperty">
+			<summary>Identifies the <see cref="P:Microsoft.Maps.Core.TilePrimitive.Opacity"></see> dependency property.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.TilePrimitive.GetBoundingBoxCore">
+			<summary>Retrieves the bounding box that contains the tile source on the map.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.MapControl.LocationRect"></see>.</returns>
+		</member>
+		<member name="M:Microsoft.Maps.Core.TilePrimitive.Refetch">
+			<summary>Refreshes all tiles.</summary>
+		</member>
+		<member name="P:Microsoft.Maps.Core.TilePrimitive.Opacity">
+			<summary>Gets or sets the opacity at which to render the tile source.</summary>
+			<returns>Returns <see cref="T:System.Double"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.TilePrimitive.TileSourceRetriever">
+			<summary>Gets the method that returns a representation of the tile source.</summary>
+			<returns>Returns <see cref="T:Microsoft.Maps.Core.TileSourceRetriever"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.TilePrimitiveSource">
+			<summary>Represents a tile image layer source.</summary>
+		</member>
+		<member name="M:Microsoft.Maps.Core.TilePrimitiveSource.#ctor(System.Int32,System.Int32,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.Maps.Core.TilePrimitiveSource"></see> class.</summary>
+			<param name="projection">A string identifying the projection of this tile source.</param>
+			<param name="tileWidth">The width of one tile, in pixels.</param>
+			<param name="tileHeight">The height of one tile, in pixels.</param>
+		</member>
+		<member name="M:Microsoft.Maps.Core.TilePrimitiveSource.GetTileUri(System.Int32,System.Int32,System.Int32)">
+			<summary>When overridden in a derived class, retrieves a tile image layer source URI for a given position.</summary>
+			<returns>Returns <see cref="T:System.Uri"></see>.</returns>
+			<param name="tilePositionY">The y-axis coordinate.</param>
+			<param name="tilePositionX">The x-axis coordinate.</param>
+			<param name="tileLevel">The depth level of the tile.</param>
+		</member>
+		<member name="P:Microsoft.Maps.Core.TilePrimitiveSource.Projection">
+			<summary>Gets the projection of this tile source, as a string.</summary>
+			<returns>Returns <see cref="T:System.String"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.TilePrimitiveSource.TileHeight">
+			<summary>Gets the height of a tile, in pixels.</summary>
+			<returns>Returns <see cref="T:System.Int32"></see>.</returns>
+		</member>
+		<member name="P:Microsoft.Maps.Core.TilePrimitiveSource.TileWidth">
+			<summary>Gets the width of a tile, in pixels.</summary>
+			<returns>Returns <see cref="T:System.Int32"></see>.</returns>
+		</member>
+		<member name="T:Microsoft.Maps.Core.TileSourceRetriever">
+			<summary>Contains the method that takes an EPSG string and returns a representation of a tile source on the map.</summary>
+		</member>
+		<member name="T:Microsoft.Maps.Core.VisibleState">
+			<summary>Represents whether a primitive on the map is visible.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.VisibleState.Hidden">
+			<summary>The primitive is hidden.</summary>
+		</member>
+		<member name="F:Microsoft.Maps.Core.VisibleState.Visible">
+			<summary>The primitive is visible.</summary>
+		</member>
+	</members>
+</doc>
